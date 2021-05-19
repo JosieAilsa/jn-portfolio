@@ -16,118 +16,162 @@
   </head>
   <body class="container">
     <header>
-      <nav class="nav">
+      <nav class="l-nav">
         <img class="logo" src="imgs/logo.png" />
         <ul>
-          <a href="#about"><li class="nav-list">about</li></a>
-          <a href="#about"><li class="nav-list">projects</li></a>
-          <a href="#about"><li class="nav-list">contact</li></a>
+          <a href="#about"><li class="l-nav__about">about</li></a>
+          <a href="#projects"><li class="l-nav__projects">projects</li></a>
+          <a href="#skills"><li class="l-nav__skills">skills</li></a>
+          <a href="#about"><li class="l-nav__conact">contact</li></a>
         </ul>
       </nav>
     </header>
     <main>
       <!---Intro landing page-->
-      <section class="landing">
-        <div class="landing-intro page">
-          <h1>Hi I'm Josie</h1>
-          <h2>I'm a Bristol-based junior UI developer.</h2>
-          <img src="./imgs/landing-intro.svg" alt="josie-newman" />
+      <section class="page">
+        <div class="landing">
+          <h1 class="landing__hi">Hi I'm Josie</h1>
+          <h2 class ="landing__intro">I'm a Bristol-based junior UI developer.</h2>
+          <img src="./imgs/landing-intro.svg" alt="josie-newman" class = "landing__img" />
         </div>
-    <!--Scroll -->
-        <div class="scroll">
-            <p class="scroll-text">scroll</p>
-            <img src="./imgs/scroll.svg" alt="scroll arrow" class = "scroll-img"/>
+        <!--Scroll -->
+        <div class="c-scroll">
+          <p class="c-scroll__text">scroll</p>
+          <img src="./imgs/scroll.svg" alt="scroll arrow" class = "scroll-img" class = "c-scroll__img"/>
         </div>
       </section>
       <!---About section-->
-      <section class="about page">
-        <h2 class="about-heading">About</h1>
-        <article class="about-main"
-            < p class= "about-paragraph">
-            I discovered the world of web development in my first graduate job
-            where – as <strong> digital content writer and creator </strong> – I helped launch and
-            latterly manage an editorial website. The moment I tried my hand at
-            some basic HTML and CSS in wordpress, I knew <strong>front-end development</strong> was
-            the right path for me. So, alongside my full-time comms role at a FTSE
-            30 company, I took on a part-time software development course with
-            _nology.
-            </p>
-          <img src="./imgs/about-bg.svg" alt="about bg">
-        </article>
-        <article class="about-personal">
-        <img src="./imgs/sunday-pm.svg" alt="sunday pm">
-        <p>Chilling in the sun with a beer, a good book and my cat, Derek.</p> 
-        <img src="./imgs/derek.png" alt="derek the cat">
-        </article>
-     <!--Scroll -->
-     <div class="scroll">
-        <p class="scroll-text">scroll</p>
-        <img src="./imgs/scroll.svg" alt="scroll arrow" class = "scroll-img"/>
-    </div>
+      <section class="page">
+        <div class ="about" id = "about">
+        <h2 class="about__title">About</h1>
+          <article class="c-about"
+              < p class = "about__paragraph">
+                I discovered the world of web development in my first graduate job
+                where – as 
+                <strong class = "about___paragraph--hover"> digital content writer and creator </strong> 
+                – I helped launch and latterly manage an editorial website. The moment I tried my hand at
+                some basic HTML and CSS in wordpress, I knew 
+                <strong class = "about___paragraph--hover"> front-end development</strong> 
+                was the right path for me. So, alongside my full-time comms role at a FTSE
+                30 company, I took on a part-time software development course with
+                _nology.
+              </p>
+            <img src="./imgs/about-bg.svg" alt="about bg" class = "about__bg">
+            <article class="personal">
+              <img src="./imgs/sunday-pm.svg" alt="sunday pm" class = "personal__bg">
+              <p class = "personal__text">Chilling in the sun with a beer, a good book and my cat, Derek.</p> 
+              <img src="./imgs/derek.png" alt="derek the cat" class = "personal__img">
+          </article>
+        </div>
+          <!--Scroll -->
+        <div class="c-scroll">
+          <p class="c-scroll__text">scroll</p>
+          <img src="./imgs/scroll.svg" alt="scroll arrow" class = "scroll-img" class = "c-scroll__img"/>
+        </div>
       </section>
-    <!--- Projects section-->
-    <section class = "projects page">
-        <h2 class = "projects-title">Projects</h1>
-        <h3 class = "project-one">Project 1</h2>
-        <div class= "projects-bg">
-            <img src="./imgs/projects-bg.svg" alt="projects bg">
-            <img src= "./imgs/project-circle.svg">
-        </div>  
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, qui. 
-            Exercitationem a similique libero. </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Reiciendis similique, quam eius atque necessitatibus dignissimos 
-        voluptate adipisci aliquam assumenda ipsa, quod nostrum incidunt dolore 
-        explicabo deserunt ab nesciunt illo nemo!</p>
-        <!--Scroll -->
-        <div class="scroll">
-            <p class="scroll-text">scroll</p>
-            <img src="./imgs/scroll.svg" alt="scroll arrow" class = "scroll-img"/>
-        </div>
-    </section>
+
+<!--- Projects section-->
+
+      <section class = "page" id = "projects">
+        <div class = "projects">
+          <h2 class = "projects__title">Projects</h1>
+          <div class= "c-carousel">
+              <img src="./imgs/projects-bg.svg" alt="projects bg" class = "c-carousel__bg">
+              <img src= "./imgs/project-circle.svg" class = "projects__carousel__circle">
+                <h3 class = "c-carousel__title"> Project 1 </h3>
+                <p class = "c-carousel__description">Using HTML, CSS and JS.</p>
+                <h4 class = "c-carousel__link"> See my code<a href = "" target = "_blank"> here.</a> </h4>
+          </div>  
+          <!--Scroll -->
+          <div class="c-scroll">
+            <p class="c-scroll__text">scroll</p>
+            <img src="./imgs/scroll.svg" alt="scroll arrow" class = "scroll-img" class = "c-scroll__img"/>
+          </div>
+      </section>
+
+      <!--Skills-->
+      <section class="page">
+        <h2 class = "skills__title"> Skills </h2>
+        <img src="./imgs/skills-bg.svg" alt="skills bg" class = "skills__bg">
+        <div class = skills>
+          <!--HTML-->
+            <div class = "c-cards-skills">
+              <div class = "c-cards-html">
+              <h5 class = "c-card-html__title">HTML</h5>
+                <i class="c-card-html__img fab fa-html5"></i>
+                <ul class = "c-card-html__list">
+                  <li>BEM</li>
+                  <li>Etc</li>
+                  <li>Etc</li>
+                </ul>
+              </div>
+          <!--CSS-->
+              <div class = "c-card-css">
+                <i class="fab fa-css3-alt"></i>
+                <h5 class = "c-card-css__title">CSS</h5>
+                <ul class = "c-card-css__list">
+                  <li>CSS</li>
+                  <li>SCSS</li>
+                  <li>Etc</li>
+                </ul>
+              </div>
+          <!--JS-->
+          <div class = "c-card-js">
+            <i class="fab fa-js-square"></i>
+            <h5 class = "c-card-js__title">Javascript</h5>
+            <ul class = "c-card-js__list">
+              <li>JQuery</li>
+              <li>Node</li>
+              <li>Etc</li>
+            </ul>
+          </div>
+          <!--tools-->
+          <div class = "c-card-tools">
+            <i class="fas fa-palette"></i>
+            <h5 class = "c-card-tools__title">Tools</h5>
+            <ul class = "c-card-tools__list">
+              <li>Git</li>
+              <li>Figma</li>
+              <li>Adobe suite</li>
+            </ul>
+          </div>
+      <!--Digital Comms-->
+          <div class = "c-card-dc">
+            <i class="far fa-comment"></i>
+            <h5 class = "c-card-dc__title">Digital Comms</h5>
+            <ul class = "c-card-dc__list">
+              <li>3+ years as a content writer</li>
+              <li>Extensive stakeholder management</li>
+              <li>Senior leader engagement</li>
+            </ul>
+          </div>
+        <!--Project Management-->
+          <div class = "c-card-pm">
+            <i class="fas fa-user-cog"></i>
+            <h5 class = "c-card-pm__title">Project Management</h5>
+            <ul class = "c-card-pm__list">
+              <li>LEAN white belt</li>
+              <li>Lead LEAN green belt team project</li>
+            </ul>
+          </div>
+       </div>
+
+
+      </section>
+
+
     <!--Contact section -->
-    <section class="contact page">
-      <div class="skills">
-        <div class = "skills-html">
-          <h2> Skills:</h2>
-          <h3> HTML </h3>
-          <i class="fas fa-angle-right"></i>
-          <img src="./imgs/html-tool-bar.svg" alt="html experience">
-          <div class ="skills-html-hover">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Blanditiis, enim vitae porro ab assumenda, 
-              voluptate earum ratione corrupti, inventore animi aliquid id 
-              accusantium? Voluptates ad dolor odio aperiam distinctio laboriosam!</p>
-          </div>
-        </div>
-        <div class = "skills-css">
-          <h3> CSS </h3>
-          <i class="fas fa-angle-right"></i>
-          <img src="./imgs/css-tool-bar.svg" alt="css experience">
-          <div class ="skills-css-hover">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Blanditiis, enim vitae porro ab assumenda, 
-              voluptate earum ratione corrupti, inventore animi aliquid id 
-              accusantium? Voluptates ad dolor odio aperiam distinctio laboriosam!</p>
-          </div>
-        </div>
-        <section class = "skills-js">
-          <h3> Javascript</h3>
-          <i class="fas fa-angle-right"></i>
-          <img src="./imgs/js-tool-bar.svg" alt="js toolbar">
-          <div class ="skills-js-hover">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Blanditiis, enim vitae porro ab assumenda, 
-              voluptate earum ratione corrupti, inventore animi aliquid id 
-              accusantium? Voluptates ad dolor odio aperiam distinctio laboriosam!</p>
-          </div>
-        </section>
-        <section class="contact">
+
+    
+    <section class="page">
+      <div class = "contact" id = "contact">
           <img src="./imgs/contact-bg.svg" alt="conatc bg">
-          <div class="contact-socials">
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-github"></i>
-            <h4 class= "contact-email">josie.a.newman@gmail.com</h4>
+          <div class="contact">
+            <h2 class = "contact-title"> Contact</h2>
+            <i class="fas fa-search-location contact-icon"></i>
+            <i class="far fa-envelope contact-icon"></i>
+            <i class="fab fa-linkedin contact-icon"></i>
+            <i class="fab fa-github contact-icon" ></i>
         </div>
         </section>
 
