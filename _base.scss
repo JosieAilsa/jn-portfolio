@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+$primary-color:#1E1E24;
+$secondary-color:#ED6340;
+$tertiary-color:#197BBD;
+$background-color:#FAF4ED;
+
+$font-display: "Red Hat Display", sans-serif;
+$font-body: "Montserrat", sans-serif;
+
+
+[class^="con"]{
+    background-color:$secondary-color;}
+    
+*{
+    background-color: $background-color;
+}

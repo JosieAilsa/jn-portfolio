@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+[class^=con] {
+  background-color: #ED6340;
+}
+
+* {
+  background-color: #FAF4ED;
+}
