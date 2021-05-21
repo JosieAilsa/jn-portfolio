@@ -1,15 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
 * {
-
+  background-color: #FAF4ED;
 }
 
-nav {
-  box-shadow: 0px 4px 12px rgba(30, 30, 36, 0.07);
-  max-width:1140px;
+h1, h2, h2, h4, h5 {
+  font-family: "Red Hat Display", sans-serif;
 }
 
-.navbar-nav {
-  flex-direction: row;
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav {
+  box-shadow: 0px 14px 12px rgba(30, 30, 36, 0.07);
+  position: sticky;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 body {
