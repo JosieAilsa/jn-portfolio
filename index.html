@@ -16,13 +16,21 @@
   </head>
   <body class="container">
     <header>
-      <nav class="l-nav">
-        <img class="logo" src="imgs/logo.png" />
+      <nav class="c-nav navbar navbar-expand">
+        <img class="logo" src="imgs/logo.png" class = "col-2" />
         <ul>
-          <a href="#about"><li class="l-nav__about">about</li></a>
-          <a href="#projects"><li class="l-nav__projects">projects</li></a>
-          <a href="#skills"><li class="l-nav__skills">skills</li></a>
-          <a href="#contact"><li class="l-nav__conact">contact</li></a>
+          <li class="c-nav__about">
+            <a href="#about">about</a>
+          </li>
+          <li class="c-nav__projects col-2">
+            <a href="#projects">projects</a>
+          </li>
+          <li class="c-nav__skills col-2">
+            <a href="#skills">skills</a>
+          </li>
+          <li class="c-nav__conact col-2"></li>
+            <a href="#contact">contact</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -44,7 +52,7 @@
       <section class="page"id = "about">
         <div class ="about" >
         <h2 class="about__title">About</h1>
-          <article class="c-about"
+          <article class="about"
               < p class = "about__paragraph">
                 I discovered the world of web development in my first graduate job
                 where – as 
@@ -98,60 +106,60 @@
         <img src="./imgs/skills-bg.svg" alt="skills bg" class = "skills__bg">
         <div class = skills>
           <!--HTML-->
-              <div class = "c-cards-html">
-              <h5 class = "c-card-html__title">HTML</h5>
-                <i class="c-card-html__img fab fa-html5"></i>
-                <ul class = "c-card-html__list">
+              <div class = "html">
+              <h5 class = "html__title">HTML</h5>
+                <i class="html__img fab fa-html5 icon"></i>
+                <ul class = "html__list">
                   <li>BEM</li>
                   <li>Etc</li>
                   <li>Etc</li>
                 </ul>
               </div>
           <!--CSS-->
-              <div class = "c-card-css">
-                <i class="fab fa-css3-alt"></i>
-                <h5 class = "c-card-css__title">CSS</h5>
-                <ul class = "c-card-css__list">
+              <div class = "css">
+                <i class="fab fa-css3-alt icon"></i>
+                <h5 class = "css__title">CSS</h5>
+                <ul class = "css__list">
                   <li>CSS</li>
                   <li>SCSS</li>
                   <li>Etc</li>
                 </ul>
               </div>
           <!--JS-->
-          <div class = "c-card-js">
-            <i class="fab fa-js-square"></i>
-            <h5 class = "c-card-js__title">Javascript</h5>
-            <ul class = "c-card-js__list">
+          <div class = "js">
+            <i class="fab fa-js-square icon"></i>
+            <h5 class = "js__title">Javascript</h5>
+            <ul class = "js__list">
               <li>JQuery</li>
               <li>Node</li>
               <li>Etc</li>
             </ul>
           </div>
           <!--tools-->
-          <div class = "c-card-tools">
-            <i class="fas fa-palette"></i>
-            <h5 class = "c-card-tools__title">Tools</h5>
-            <ul class = "c-card-tools__list">
+          <div class = "tools">
+            <i class="fas fa-palette icon"></i>
+            <h5 class = "tools__title">Tools</h5>
+            <ul class = "tools__list">
               <li>Git</li>
               <li>Figma</li>
               <li>Adobe suite</li>
             </ul>
           </div>
       <!--Digital Comms-->
-          <div class = "c-card-dc">
-            <i class="far fa-comment"></i>
-            <h5 class = "c-card-dc__title">Digital Comms</h5>
-            <ul class = "c-card-dc__list">
+          <div class = "dc">
+            <i class="far fa-comment icon"></i>
+            <h5 class = "dc__title">Digital Comms</h5>
+            <ul class = "dc__list">
               <li>3+ years as a content writer</li>
               <li>Extensive stakeholder management</li>
               <li>Senior leader engagement</li>
             </ul>
           </div>
         <!--Project Management-->
-          <div class = "c-card-pm">
+          <div class = "pm">
             <i class="fas fa-user-cog"></i>
-            <h5 class = "c-card-pm__title">Project Management</h5>
-            <ul class = "c-card-pm__list">
+            <h5 class = "pm__title">Project Management</h5>
+            <ul class = "pm__list">
               <li>LEAN white belt</li>
               <li>Lead LEAN green belt team project</li>
             </ul>
@@ -165,15 +173,15 @@
       <div class = "contact">
         <h2 class = "contact__title"> Contact</h2>
             <img src="./imgs/contact-bg.svg" alt="conact bg">
-            <div class = "c-card-location">
+            <div class = "location">
               <i class="fas fa-search-location icon "></i>
-              <h5 class = "c-card-location__title"> Location</h5>
-              <p class = "c-card-location__text">Bristol, UK. Open to remote opportunities.</p>
+              <h5 class = "location__title"> Location</h5>
+              <p class = "location__text">Bristol, UK. Open to remote opportunities.</p>
             </div>
-            <div class = "c-card-email">
+            <div class = "email">
               <i class="far fa-envelope icon"></i>
-              <h5 class = "c-card-email__title icon">Email:</h5>
-              <p class = "c-card-email__text">josie.a.newman@gmail.com</p>
+              <h5 class = "email__title icon">Email:</h5>
+              <p class = "email__text">josie.a.newman@gmail.com</p>
             </div>
             </div>
               <i class="fab fa-linkedin icon social-icon"></i>
