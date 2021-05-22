@@ -9,7 +9,7 @@ $background-color:#FAF4ED;
 $font-display: "Red Hat Display", sans-serif;
 $font-body: "Montserrat", sans-serif;
 
-*{
+.container{
     background-color: $background-color;
 }
 
@@ -19,4 +19,15 @@ h1,h2,h3,h4,h5 {
 
 p{
     font-family: $font-body;
+}
+
+.c-scroll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main{
+    background-color: $background-color;
 }
