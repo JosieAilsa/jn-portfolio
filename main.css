@@ -12,12 +12,6 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-.c-scroll {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 main {
   background-color: #FAF4ED;
 }
@@ -25,22 +19,30 @@ main {
 .nav {
   box-shadow: 0px 14px 12px rgba(30, 30, 36, 0.07);
   font-family: "Red Hat Display", sans-serif;
-  height: 8vh;
-  display: flex;
+  /*display: flex;
   text-align: center;
-  align-items: center;
-  position: relative;
+  position: relative;*/
   margin-bottom: 2vh;
   background-color: #FAF4ED;
   position: sticky;
 }
+.nav .logo {
+  flex-basis: auto;
+}
+.nav .navbar-nav__container {
+  padding: 0px !important;
+}
+.nav .nav-items {
+  text-align: start;
+  padding: 0px;
+}
 
 .c-scroll {
-  display: flex;
+  text-align: center;
 }
-.c-scroll .c-scroll_img {
-  justify-content: center;
-  align-items: center;
+.c-scroll .c-scroll__text {
+  margin: 5px;
+  margin-top: 2vh;
 }
 
 .landing {
@@ -51,15 +53,19 @@ main {
   justify-content: center;
   align-items: center;
   color: #ED6340;
-  font-size: 5em;
+  font-size: 15em;
+  font-size: 5vw;
   margin-top: 2vh;
   background-color: transparent;
+  flex-basis: auto;
 }
 .landing .landing__intro {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
+  font-size: 12em;
+  font-size: 4vw;
+  background-color: transparent;
 }
 .landing .landing__img {
   display: block;
@@ -68,5 +74,5 @@ main {
 }
 
 .svg-container {
-  height: 30vh;
+  height: 60vh;
 }

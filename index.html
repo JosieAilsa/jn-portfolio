@@ -16,22 +16,25 @@
   </head>
   <body>
     <header class="container-fluid">
-        <nav class="row nav justify-content-center">
-          <div class="col-4 align-items-center">
-            <img src="./imgs/logo.svg" alt="logo" class="navbar-brand logo align-self-start"  width="110px" height="63px">
+        <nav class="row nav d-flex flex-row flex-nowrap">
+          <div class="col-4">
+            <img src="./imgs/logo.svg" alt="logo" class="navbar-brand logo"  width="110px" height="63px">
           </div>
-          <div class="col-2 align-items-center ">
-            <a href="#about" class = "nav-item nav-link active justify-content-center">about</a>
+          <!--Nav bar nav-->
+          <div class = "navbar-nav d-flex flex-row justify-content-around">
+          <div class="col-2 navbar navbar-nav__container">
+            <a href="#about" class = "nav-item nav-link active text-lg-left text-sm-right">about</a>
            </div>
-          <div class="col-2 align-items-center">
-              <a href="#projects" class = "nav-item nav-link active justify-content-center">projects</a>
+          <div class="col-2 navbar navbar-nav__container">
+              <a href="#projects" class = "nav-item nav-link active text-lg-left text-sm-right">projects</a>
           </div>
-          <div class="col-2 align-items-center">
-              <a href="#skills" class = "nav-item nav-link active justify-content-center">skills</a>
+          <div class="col-2 navbar navbar-nav__container">
+              <a href="#skills" class = "nav-item nav-link active text-lg-left text-sm-right">skills</a>
           </div>
-          <div class="col-2 align-items-center">
-              <a href="#contact" class = "nav-item nav-link active justify-content-center">contact</a>
-            </div>
+          <div class="col-2 navbar navbar-nav__container">
+              <a href="#contact" class = "nav-item nav-link active text-lg-left text-sm-right">contact</a>
+          </div>
+          </div>
         </div>
       </header>
       </div>
@@ -41,7 +44,7 @@
         <div class="landing">
           <div class = "row justify-content-center align-items-center">
             <div class = "col-xs-12 col-md-10 col-xl-6">
-              <h1 class="landing__hi text-nowrap">Hi I'm Josie</h1>
+              <h1 class="landing__hi text-nowrap">Hi, I'm Josie</h1>
             </div>
           </div>
           <div class= "row justify-content-center align-items-center">
@@ -50,9 +53,9 @@
             </div>
           </div>
           <div class = "row justify-content-center align-items-center">
-            <div class = "col-xs-12 col-md-10 col-xl-8 justify-content-center align-self-center svg-container">
+            <div class = "col-xs-12 col-md-10 col-xl-8 align-self-center svg-container">
               <!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In  -->
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height = "100%" width="100%"
 height="80%" viewbox="0 0 682.6 614.2" style="overflow:visible;enable-background:new 0 0 682.6 614.2;"
 xml:space="preserve">
 <style type="text/css">
@@ -555,14 +558,10 @@ c-2.3-1-4.7-1.6-6.9-2.9c-4.7-2.6-7.9-7.8-7.9-12.6c0-2.9,1.2-5.8,3.7-7.2C252.3,37
             </div>
         </div>
         <!--Scroll -->
-        <div class="c-scroll row justify-content-center align-items-center">
-          <div class = "col-xs-4 col-md-2 col-xl-2">
+        <div class="c-scroll row ">
+          <div class = "col-xs-4 col-md-2 col-xl-2 iustify-content-center align-items-center">
             <p class="c-scroll__text align-self-center"">scroll</p>
-          </div>
-        </div>
-        <div class= "c-scroll row justify-content-center">
-          <div class = "col-xs-4 col-md-2 col-xl-2 justify-content-center justify-content-center">
-              <img src="./imgs/scroll.svg" alt="scroll arrow" class = "c-scroll__img justify-content-center align-self-center"/>
+              <img src="./imgs/scroll.svg" alt="scroll arrow" class = "c-scroll__img align-self-center"/>
             </div>
           </div>  
         </div>

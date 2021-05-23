@@ -1,20 +1,29 @@
 .nav{
     box-shadow: 0px 14px 12px rgba(30, 30, 36, 0.07);
     font-family: $font-display;
-    height: 8vh;
-    display: flex;
+    /*display: flex;
     text-align: center;
-    align-items: center;
-    position: relative;
+    position: relative;*/
     margin-bottom: 2vh;
     background-color: $background-color;
     position: sticky;
+.logo{
+    flex-basis: auto;
+}
+.navbar-nav__container{
+    padding: 0px !important;
+}
+.nav-items{
+    text-align: start;
+    padding: 0px
+}
 }
 
 .c-scroll{
-    display: flex;
-    .c-scroll_img{
-        justify-content: center;
-        align-items: center;
-    }
+    text-align: center;
+.c-scroll__text{
+    margin:5px;
+    margin-top: 2vh;
+
+}
 }
