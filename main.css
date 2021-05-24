@@ -19,9 +19,6 @@ main {
 .nav {
   box-shadow: 0px 14px 12px rgba(30, 30, 36, 0.07);
   font-family: "Red Hat Display", sans-serif;
-  /*display: flex;
-  text-align: center;
-  position: relative;*/
   margin-bottom: 2vh;
   background-color: #FAF4ED;
   position: sticky;
@@ -32,9 +29,10 @@ main {
 .nav .navbar-nav__container {
   padding: 0px !important;
 }
-.nav .nav-items {
+.nav .nav-item, .nav .nav-item:active {
   text-align: start;
   padding: 0px;
+  color: #1E1E24 !important;
 }
 
 .c-scroll {
@@ -44,7 +42,11 @@ main {
   margin: 5px;
   margin-top: 2vh;
 }
+.c-scroll .c-scroll__text .s-scroll__img-conainer {
+  height: 5vh;
+}
 
+/*Landing styles*/
 .landing {
   height: 100vh;
 }
@@ -53,9 +55,9 @@ main {
   justify-content: center;
   align-items: center;
   color: #ED6340;
-  font-size: 15em;
-  font-size: 5vw;
-  margin-top: 2vh;
+  /*font-size: /*15em;*/
+  /*5vw;*/
+  margin-top: 4vh;
   background-color: transparent;
   flex-basis: auto;
 }
@@ -67,12 +69,30 @@ main {
   font-size: 4vw;
   background-color: transparent;
 }
+.landing .svg-container {
+  height: 60vh;
+}
 .landing .landing__img {
   display: block;
   margin: auto;
   height: 500px;
 }
 
-.svg-container {
-  height: 60vh;
+/*About styles*/
+.about {
+  background-image: url(./imgs/about-bg.svg);
+  background-repeat: no-repeat;
+}
+.about .about__title {
+  color: #ED6340;
+  font-size: 2em;
+  font-size: 2vw;
+  margin-top: 2vh;
+  background-color: transparent;
+  display: flex;
+  flex-basis: auto;
+}
+
+.about__paragraph {
+  font-size: calc(1em + 1vw);
 }

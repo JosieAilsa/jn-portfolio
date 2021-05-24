@@ -16,23 +16,23 @@
   </head>
   <body>
     <header class="container-fluid">
-        <nav class="row nav d-flex flex-row flex-nowrap">
-          <div class="col-4">
+        <nav class="row nav d-flex flex-row flex-nowrap navbar sticky-top justify-content-start">
+          <div class="col-xs-2 col-4 logo-container d-flex justify-content-center">
             <img src="./imgs/logo.svg" alt="logo" class="navbar-brand logo"  width="110px" height="63px">
           </div>
           <!--Nav bar nav-->
-          <div class = "navbar-nav d-flex flex-row justify-content-around">
-          <div class="col-2 navbar navbar-nav__container">
-            <a href="#about" class = "nav-item nav-link active text-lg-left text-sm-right">about</a>
+          <div class = "navbar-nav d-flex flex-row justify-content-around col">
+          <div class="col-2 navbar-nav__container my-panel-styles ">
+            <a href="#about" class = "nav-item nav-link active text-lg-left text-sm-right d-none d-sm-block">about</a>
            </div>
           <div class="col-2 navbar navbar-nav__container">
-              <a href="#projects" class = "nav-item nav-link active text-lg-left text-sm-right">projects</a>
+              <a href="#projects" class = "nav-item nav-link active text-lg-left text-sm-left d-none d-sm-block">projects</a>
           </div>
           <div class="col-2 navbar navbar-nav__container">
-              <a href="#skills" class = "nav-item nav-link active text-lg-left text-sm-right">skills</a>
+              <a href="#skills" class = "nav-item nav-link active text-lg-left text-sm-right d-none d-sm-block">skills</a>
           </div>
           <div class="col-2 navbar navbar-nav__container">
-              <a href="#contact" class = "nav-item nav-link active text-lg-left text-sm-right">contact</a>
+              <a href="#contact" class = "nav-item nav-link active text-lg-left text-sm-right d-none d-sm-block">contact</a>
           </div>
           </div>
         </div>
@@ -48,7 +48,7 @@
             </div>
           </div>
           <div class= "row justify-content-center align-items-center">
-            <div class = "col-xs-8 col-md-8 col-xl-">
+            <div class = "col-xs-8">
               <h2 class ="landing__intro text-nowrap">I'm a Bristol-based junior UI developer.</h2>
             </div>
           </div>
@@ -558,36 +558,43 @@ c-2.3-1-4.7-1.6-6.9-2.9c-4.7-2.6-7.9-7.8-7.9-12.6c0-2.9,1.2-5.8,3.7-7.2C252.3,37
             </div>
         </div>
         <!--Scroll -->
-        <div class="c-scroll row ">
-          <div class = "col-xs-4 col-md-2 col-xl-2 iustify-content-center align-items-center">
-            <p class="c-scroll__text align-self-center"">scroll</p>
-              <img src="./imgs/scroll.svg" alt="scroll arrow" class = "c-scroll__img align-self-center"/>
+        <div class="c-scroll row justify-content-center">
+          <div class = "col-2">
+            <p class="c-scroll__text"">scroll</p>
+              <div class = "c-scroll__img-container">
+              <img src="./imgs/scroll.svg" alt="scroll arrow" class = "c-scroll__img"/>
+              </div>
             </div>
           </div>  
         </div>
       </section>
 <!---About section-->
-      <section class="page"id = "about">
-        <div class ="about" >
-        <h2 class="about__title">About</h1>
-          <article class="about"
-              < p class = "about__paragraph">
-                I discovered the world of web development in my first graduate job
-                where – as 
-                <strong class = "about___paragraph--hover"> digital content writer and creator </strong> 
-                – I helped launch and latterly manage an editorial website. The moment I tried my hand at
-                some basic HTML and CSS in wordpress, I knew 
-                <strong class = "about___paragraph--hover"> front-end development</strong> 
-                was the right path for me. So, alongside my full-time comms role at a FTSE
-                30 company, I took on a part-time software development course with
-                _nology.
-              </p>
-            <img src="./imgs/about-bg.svg" alt="about bg" class = "about__bg">
-            <article class="personal">
-              <img src="./imgs/sunday-pm.svg" alt="sunday pm" class = "personal__bg">
-              <p class = "personal__text">Chilling in the sun with a beer, a good book and my cat, Derek.</p> 
-              <img src="./imgs/derek.png" alt="derek the cat" class = "personal__img">
-          </article>
+      <section class="page">
+        <div class ="about">
+          <div class = "row d-flex justify-content-around">
+            <div class = "col-8 col-md-6 col-lg-6">
+              <h2 class="about__title">About</h1>
+            </div>
+          </div>
+          <div class = "row d-flex justify-content-center">
+            <div class = " col-8 col-sm-6 col-md-4 col-xl-4 text-md-right text-center text-sm-right">
+                <p>I discovered the world of web development in my first graduate job
+                  where – as
+                  <strong class = "about___paragraph--hover"> digital content writer and creator </strong> 
+                  – I helped launch and latterly manage an editorial website. The moment I tried my hand at
+                  some basic HTML and CSS in wordpress, I knew 
+                  <strong class = "about___paragraph--hover"> front-end development</strong> 
+                  was the right path for me. So, alongside my full-time comms role at a FTSE
+                  30 company, I took on a part-time software development course with
+                  _nology.
+                </p>
+            </div>
+        </div>
+              <article class="personal">
+                <img src="./imgs/sunday-pm.svg" alt="sunday pm" class = "personal__bg">
+                <p class = "personal__text">Chilling in the sun with a beer, a good book and my cat, Derek.</p> 
+                <img src="./imgs/derek.png" alt="derek the cat" class = "personal__img">
+            </article>
         </div>
           <!--Scroll -->
         <div class="c-scroll">

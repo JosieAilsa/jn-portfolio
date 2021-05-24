@@ -1,3 +1,4 @@
+/*Landing styles*/
 .landing{
     height: 100vh;
 
@@ -6,13 +7,12 @@
         justify-content: center;
         align-items: center;
         color: $secondary-color;
-        font-size: 15em;
-        font-size: 5vw;
-        margin-top: 2vh;
+        /*font-size: /*15em;*/  /*5vw;*/
+        margin-top: 4vh;
         background-color: transparent;
         flex-basis: auto;
     }
-
+    
     .landing__intro{
         display: flex;
         justify-content: center;
@@ -21,7 +21,9 @@
         font-size: 4vw;
         background-color: transparent;
     }
-
+    .svg-container{
+        height: 60vh;
+    }
     .landing__img {
         display: block;
         margin: auto;
@@ -29,8 +31,27 @@
     }}
 
 
-.svg-container{
-    height: 60vh;
+/*About styles*/
+
+.about{
+    background-image:url(./imgs/about-bg.svg);
+    background-repeat: no-repeat;
+    .about__title{
+        color: $secondary-color;
+        font-size: 2em;
+        font-size: 2vw;
+        margin-top: 2vh;
+        background-color: transparent; 
+        display: flex;
+        flex-basis: auto;
+    }
+
+
+
 }
 
 
+.about__paragraph{
+    font-size: calc(1em + 1vw); 
+    }
+  
