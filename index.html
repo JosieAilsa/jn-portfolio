@@ -48,7 +48,7 @@
             </div>
           </div>
           <div class= "row justify-content-center align-items-center">
-            <div class = "col-xs-8">
+            <div class = "col-8 col-md-10 col-xl-8">
               <h2 class ="landing__intro text-nowrap">I'm a Bristol-based junior UI developer.</h2>
             </div>
           </div>
@@ -558,8 +558,8 @@ c-2.3-1-4.7-1.6-6.9-2.9c-4.7-2.6-7.9-7.8-7.9-12.6c0-2.9,1.2-5.8,3.7-7.2C252.3,37
             </div>
         </div>
         <!--Scroll -->
-        <div class="c-scroll row justify-content-center">
-          <div class = "col-2">
+        <div class="c-scroll row d-flex justify-content-center">
+          <div class = "col-2 d-flex flex-column justify-content-center align-items-center">
             <p class="c-scroll__text"">scroll</p>
               <div class = "c-scroll__img-container">
               <img src="./imgs/scroll.svg" alt="scroll arrow" class = "c-scroll__img"/>
@@ -569,31 +569,39 @@ c-2.3-1-4.7-1.6-6.9-2.9c-4.7-2.6-7.9-7.8-7.9-12.6c0-2.9,1.2-5.8,3.7-7.2C252.3,37
         </div>
       </section>
 <!---About section-->
-      <section class="page">
-        <div class ="about">
+      <div class="page">
+        <secton class ="about">
           <div class = "row d-flex justify-content-around">
             <div class = "col-8 col-md-6 col-lg-6">
               <h2 class="about__title">About</h1>
             </div>
           </div>
-          <div class = "row d-flex justify-content-center">
-            <div class = " col-8 col-sm-6 col-md-4 col-xl-4 text-md-right text-center text-sm-right">
-                <p>I discovered the world of web development in my first graduate job
+          <div class = "row d-flex justify-content-center align-items-center about__main about__container text-center">
+            <div class = " col-7 col-md-6 col-lg-5 text-right about__paragraph"  >
+                <p class = "about__text"">I discovered the world of web development in my first graduate job
                   where – as
-                  <strong class = "about___paragraph--hover"> digital content writer and creator </strong> 
+                  <strong class = "about___text--hover"> digital content writer and creator </strong> 
                   – I helped launch and latterly manage an editorial website. The moment I tried my hand at
                   some basic HTML and CSS in wordpress, I knew 
-                  <strong class = "about___paragraph--hover"> front-end development</strong> 
+                  <strong class = "about___text-hover"> front-end development</strong> 
                   was the right path for me. So, alongside my full-time comms role at a FTSE
                   30 company, I took on a part-time software development course with
                   _nology.
                 </p>
             </div>
-        </div>
-              <article class="personal">
-                <img src="./imgs/sunday-pm.svg" alt="sunday pm" class = "personal__bg">
+            <!--
+            <div class = "about__img col-8 col-md-6 col-lg-4">
+              <img src="./imgs/about-bg.svg" alt="background_svg">
+          </div>--->
+        </div class = "row">
+          </section>
+              <article class="personal row">
+                <div class="personal__container col-8 col-md-6">
                 <p class = "personal__text">Chilling in the sun with a beer, a good book and my cat, Derek.</p> 
+                </div>
+                <div class ="personal__derek col-3">
                 <img src="./imgs/derek.png" alt="derek the cat" class = "personal__img">
+                </div>
             </article>
         </div>
           <!--Scroll -->

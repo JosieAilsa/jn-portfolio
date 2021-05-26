@@ -55,6 +55,8 @@ main {
   justify-content: center;
   align-items: center;
   color: #ED6340;
+  font-size: 10rem;
+  font-size: 10vw;
   /*font-size: /*15em;*/
   /*5vw;*/
   margin-top: 4vh;
@@ -68,6 +70,7 @@ main {
   font-size: 12em;
   font-size: 4vw;
   background-color: transparent;
+  margin-top: 1vh;
 }
 .landing .svg-container {
   height: 60vh;
@@ -78,21 +81,81 @@ main {
   height: 500px;
 }
 
-/*About styles*/
-.about {
-  background-image: url(./imgs/about-bg.svg);
-  background-repeat: no-repeat;
+@media (min-width: 1200px) {
+  .landing__hi {
+    font-size: 4rem;
+  }
 }
-.about .about__title {
+/*About styles*/
+.about__title {
   color: #ED6340;
-  font-size: 2em;
-  font-size: 2vw;
+  font-size: 2rem;
   margin-top: 2vh;
   background-color: transparent;
-  display: flex;
-  flex-basis: auto;
 }
 
-.about__paragraph {
-  font-size: calc(1em + 1vw);
+/*.about__paragraph{
+    padding-top: 5vh;
+}*/
+/*
+.about___main{
+    position: absolute;
+    top: 0;
+        .about__container{
+            pos
+
+            ition: relative;
+            background-color: transparent;
+        }
+        .about__img{
+            position:relative;
+
+        }
+    }
+*/
+@media (min-width: 0px) {
+  .about__container {
+    background-image: url(./imgs/about-bg-sm.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 75vh;
+  }
+
+  .about__paragraph {
+    font-size: 10px !important;
+    padding-top: 0vw !important;
+  }
+}
+@media (min-width: 399px) {
+  .about__paragraph {
+    font-size: 1rem;
+    padding-top: 10vh;
+  }
+
+  .about__container {
+    background-image: url(./imgs/about-bg.svg) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    min-height: 816px;
+  }
+}
+@media (min-width: 650px) {
+  .about__paragraph {
+    font-size: 1rem !important;
+    padding-top: 20vh;
+    line-height: 2;
+  }
+}
+.personal__container {
+  background-image: url(./imgs/sunday-pm.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.personal__text {
+  padding-top: 80px;
 }
