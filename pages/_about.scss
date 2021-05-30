@@ -2,7 +2,7 @@
     color: $secondary-color;
     font-size: 2rem;
     margin-top: 2vh;
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 /*.about__paragraph{
@@ -23,7 +23,6 @@ top: 0;
 }
 */
 
-
 @media(min-width:0px){
 .about__container {
     background-image:url(./imgs/about-bg-sm.svg);
@@ -38,6 +37,7 @@ top: 0;
 }
 .personal__text{
     font-size: 10px !important;
+    padding-top: 2.5vh;
 }
 .personal__img{ 
 max-width: 206px !important;
@@ -62,10 +62,15 @@ height: 20vh;
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
-   min-height: 618px;
+   min-height: 65vh;
 }
 .personal__text{
     font-size: 12px !important;
+}
+.about__title{
+    color: $secondary-color;
+    font-size: 3rem;
+    margin-top: 1vh;
 }
 }
 /*

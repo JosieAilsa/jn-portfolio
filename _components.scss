@@ -1,25 +1,29 @@
+.header{
+    width: 100%;
+    background-color: $background-color;
+    height: 10vh;
+
+}
 .nav{
     box-shadow: 0px 14px 12px rgba(30, 30, 36, 0.07);
     font-family: $font-display;
-    background-color: $background-color;
 
-.logo{
-    flex-basis: auto;
-}
-.navbar-nav__container{
-    padding: 0px !important;
-    height: 100%;
-}
-.nav-item, .nav-item:active{
-    text-align: start;
-    padding: 0px;
-    color:$primary-color !important;
-}
-.nav-item:hover{
-    color: $secondary-color !important;
-    transform: scale(1.1);
-    transition: all .2s ease-in-out;
-
+    .logo{
+        flex-basis: auto;
+    }
+    .navbar-nav__container{
+        padding: 0px !important;
+        height: 100%;
+    }
+    .nav-item, .nav-item:active{
+        text-align: start;
+        padding: 0px;
+        color:$primary-color !important;
+    }
+    .nav-item:hover{
+        color: $secondary-color !important;
+        transform: scale(1.1);
+        transition: all .2s ease-in-out;
 }}
 /*
 nav{
@@ -47,13 +51,52 @@ nav{
 
 .c-scroll{
     text-align: center;
+    
 .c-scroll__text{
     margin:5px;
     margin-top: 2vh;
-
+    }
 .s-scroll__img-conainer{
     height: 5vh;
-}
+}}
 
+.c-carousel{
+    background-image: url("./imgs/projects-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    min-height: 50vh;
+
+.projects__carousel__circle{
+    // min-width: 188px;
+    // min-height: 192px;
+    // max-width: 306px;
+    // max-height: 312px;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    }
+.c-carousel__button-left{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    min-height: 48px;
+    max-width: 96px;
+    max-height: 66px;
+    }
+.c-carousel__button-right{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    min-height: 48px;
+    max-width: 96px;
+    max-height: 66px;
+    }
+.c-carousel__button-left:hover{
+    transform: scale(1.4);
+    transition: all .2s ease-in-out;
+}
+.c-carousel__button-right:hover{
+    transform: scale(1.4);
+    transition: all .2s ease-in-out;
 }
 }

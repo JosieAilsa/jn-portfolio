@@ -1,39 +1,61 @@
 .landing{
-    height: 80vh;
+    height: 90vh;
 
-    .landing__hi { 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $secondary-color;
-        font-size: 10rem;
-        font-size: 10vw;
-        /*font-size: /*15em;*/  /*5vw;*/
+.landing__hi {
+    font-size: 2rem;
+    color: $secondary-color !important;
+    margin-top: 4vh;
+    font-size:10vw;
+    }
+.landing__intro{
+    font-size: 5vw;
+    padding-bottom: 2vh;
+    }
+.svg-container{
+    height: 50vh;
+    }
+  .landing__img {
+   display: block;
+    margin: auto;
+    text-align: center;
+    }
+    .landing__img:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+    }
+}
+
+  @media (min-width:992px) {
+    .landing__hi {
+        font-size:5em !important;
+        color: $secondary-color !important;
         margin-top: 4vh;
-        background-color: transparent;
-        flex-basis: auto;
     }
-    
+      .landing__intro{
+          font-size: 2.75rem !important;
+    }
+ }
+  @media (min-width:1200px) {
+    .landing__hi {
+        font-size: 6rem !important;
+        color: $secondary-color !important;
+        margin-top: 4vh;
+    }
     .landing__intro{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 12em;
-        font-size: 4vw;
-        background-color: transparent;
-        margin-top: 1vh;
+        font-size: 3rem !important;
+        margin-bottom: 5vh;
     }
-    .svg-container{
-        height: 50vh;
-    }
-    .landing__img {
-        display: block;
-        margin: auto;
-        text-align: center;
-    }}
+  }
 
-    @media (min-width: 1200px) {
-        .landing__hi {
-          font-size: 4rem;
-        }
-      }
+//   .landing__hi { 
+   
+//     background-color: transparent;
+// }
+
+// .landing__intro{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 2.5em;
+//     background-color: transparent;
+//     margin-top: 1vh}
