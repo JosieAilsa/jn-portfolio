@@ -27,4 +27,10 @@ main{
 
 .container-fluid{
     background-color: $background-color;
+    margin: 0px;
+    padding: 0px !important;
+}
+
+.icon{
+    color: $secondary-color;
 }

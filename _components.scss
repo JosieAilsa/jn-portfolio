@@ -24,6 +24,7 @@
         color: $secondary-color !important;
         transform: scale(1.1);
         transition: all .2s ease-in-out;
+        text-decoration: underline $secondary-color;
 }}
 /*
 nav{
@@ -51,6 +52,8 @@ nav{
 
 .c-scroll{
     text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     
 .c-scroll__text{
     margin:5px;
@@ -60,6 +63,8 @@ nav{
     height: 5vh;
 }}
 
+
+// Projects carousel
 .c-carousel{
     background-image: url("./imgs/projects-bg.svg");
     background-repeat: no-repeat;
@@ -69,25 +74,35 @@ nav{
     min-height: 50vh;
 
 .projects__carousel__circle{
-    // min-width: 188px;
-    // min-height: 192px;
-    // max-width: 306px;
-    // max-height: 312px;
-    height: 50%;
-    width: 50%;
+    //  min-width: 158px;
+    //  min-height: 162px;
+    //  max-width: 306px;
+    //  max-height: 312px;
+    max-height: 35%;
+    max-width: 35%;
     text-align: center;
     }
+//  Stop circle overlapping bg on large devices    
+    @media (min-width:1000px){
+        .projects__carousel__circle{
+            max-height: 25% !important;
+             max-width: 25% !important;
+        }
+    }
+
 .c-carousel__button-left{
     margin-left: 2vw;
     margin-right: 2vw;
-    min-height: 48px;
+    min-height: 22px;
+    min-width: 31px;
     max-width: 96px;
     max-height: 66px;
     }
 .c-carousel__button-right{
     margin-left: 2vw;
     margin-right: 2vw;
-    min-height: 48px;
+    min-height: 22px;
+    min-width:31px;
     max-width: 96px;
     max-height: 66px;
     }
@@ -100,3 +115,9 @@ nav{
     transition: all .2s ease-in-out;
 }
 }
+
+.c-carousel__title{
+    margin-bottom: 1rem;
+    color: $secondary-color;
+}
+

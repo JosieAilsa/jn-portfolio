@@ -560,9 +560,9 @@ c-2.3-1-4.7-1.6-6.9-2.9c-4.7-2.6-7.9-7.8-7.9-12.6c0-2.9,1.2-5.8,3.7-7.2C252.3,37
         <div class="c-scroll row d-flex justify-content-center">
           <div class = "col-2 d-flex flex-column justify-content-center align-items-center">
             <p class="c-scroll__text"">scroll</p>
-              <div class = "c-scroll__img-container">
+            <div class = "c-scroll__img-container">
               <img src="./imgs/scroll.svg" alt="scroll arrow" class = "c-scroll__img"/>
-              </div>
+            </div>
             </div>
           </div>  
         </div>
@@ -570,19 +570,19 @@ c-2.3-1-4.7-1.6-6.9-2.9c-4.7-2.6-7.9-7.8-7.9-12.6c0-2.9,1.2-5.8,3.7-7.2C252.3,37
 <!---About section-->
       <div class="page">
         <section class ="about">
-          <div class = "row d-flex justify-content-around">
-            <div class = "col-8 col-md-6 col-lg-6">
-              <h2 class="about__title">About</h1>
+          <div class = "row">
+            <div class = "col-8 col-md-6 col-lg-6 d-flex justify-content-center">
+              <h2 class="about__title text-sm-center ">About</h1>
             </div>
           </div>
           <div class = "row d-flex justify-content-center align-items-center about__main about__container text-center">
             <div class = " col-7 col-md-6 col-lg-5 col-xl-3 text-right about__paragraph"  >
-                <p class = "about__text"">I discovered the world of web development in my first graduate job
+                <p class = "about__text">I discovered the world of web development in my first graduate job
                   where – as
-                  <strong class = "about___text--hover"> digital content writer and creator </strong> 
+                  <span class = "about___text--color"> digital content writer and creator </span> 
                   – I helped launch and latterly manage an editorial website. The moment I tried my hand at
                   some basic HTML and CSS in wordpress, I knew 
-                  <strong class = "about___text-hover"> front-end development</strong> 
+                  <span class = "about___text--color"> front-end development</span> 
                   was the right path for me. So, alongside my full-time comms role at a FTSE
                   30 company, I took on a part-time software development course with
                   _nology.
@@ -615,7 +615,7 @@ c-2.3-1-4.7-1.6-6.9-2.9c-4.7-2.6-7.9-7.8-7.9-12.6c0-2.9,1.2-5.8,3.7-7.2C252.3,37
       <div class = "page" id = "projects">
         <div class = "projects text-center">
           <h2 class = "projects__title">Projects</h1>
-          <div class = "row d-flex justify-content-center">
+          <div class = "row d-fex align-items-center justify-content-center">
             <div class= "c-carousel col-10 col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center align-items-center">
               <img src="./imgs/projects-button-left.svg" alt="arrow left" class = "c-carousel__button-left">
               <img src= "./imgs/projects-circle.svg" class = "projects__carousel__circle">
@@ -636,72 +636,76 @@ c-2.3-1-4.7-1.6-6.9-2.9c-4.7-2.6-7.9-7.8-7.9-12.6c0-2.9,1.2-5.8,3.7-7.2C252.3,37
         </div>
 
 <!--Skills section -->
-      <section class="page" id = "skills"> 
-        <h2 class = "skills__title"> Skills </h2>
-        <img src="./imgs/skills-bg.svg" alt="skills bg" class = "skills__bg">
-        <div class = skills>
+      <div class="page" id = "skills">
+        <div class = "row">
+          <h2 class = " skills__header col-8 col-md-6 col-lg-6 text-center"> Skills </h2>
+        </div>
+        <div class = "skills__container d-flex justify-content-center align-items-center text-center">
+          <div class = "row">
           <!--HTML-->
-              <div class = "html">
-              <h5 class = "html__title">HTML</h5>
-                <i class="html__img fab fa-html5 icon"></i>
-                <ul class = "html__list">
-                  <li>BEM</li>
-                  <li>Etc</li>
-                  <li>Etc</li>
-                </ul>
+              <div class = "html col-6 col-md-4 col-lg-4 col-xl-4 d-flex flex-column">
+                <i class="html__img fab fa-html5 icon fa-2x"></i>
+                <h5 class = "html__title skills__title ">HTML</h5>
+                  <ul class = "html__list skills__list text-left">
+                    <li class ="skills__text">BEM</li>
+                    <li class ="skills__text">Etc</li>
+                    <li class ="skills__text">Etc</li>
+                  </ul>
               </div>
           <!--CSS-->
-              <div class = "css">
-                <i class="fab fa-css3-alt icon"></i>
-                <h5 class = "css__title">CSS</h5>
-                <ul class = "css__list">
-                  <li>CSS</li>
-                  <li>SCSS</li>
-                  <li>Etc</li>
-                </ul>
-              </div>
+          <div class = "css col-6 col-md-4 col-lg-4 col-xl-4 d-flex flex-column">
+            <i class="css__img fab fa-css3-alt icon fa-2x"></i>
+            <h5 class = "html__title skills__title ">CSS</h5>
+              <ul class = "css__list skills__list text-left">
+                <li class ="skills__text">SCSS</li>
+                <li class ="skills__text">Etc</li>
+                <li class ="skills__text">Etc</li>
+              </ul>
+            </div>
           <!--JS-->
-          <div class = "js">
-            <i class="fab fa-js-square icon"></i>
-            <h5 class = "js__title">Javascript</h5>
-            <ul class = "js__list">
-              <li>JQuery</li>
-              <li>Node</li>
-              <li>Etc</li>
-            </ul>
-          </div>
+          <div class = "js col-6 col-md-4 col-lg-4 col-xl-4 d-flex flex-column">
+            <i class="js__img fab fa-js-square icon fa-2x"></i>
+            <h5 class = "js__title skills__title ">JS</h5>
+              <ul class = "js__list skills__list text-left">
+                <li class ="skills__text">JQuery</li>
+                <li class ="skills__text">Node</li>
+                <li class ="skills__text">Etc</li>
+              </ul>
+            </div>
           <!--tools-->
-          <div class = "tools">
-            <i class="fas fa-palette icon"></i>
-            <h5 class = "tools__title">Tools</h5>
-            <ul class = "tools__list">
-              <li>Git</li>
-              <li>Figma</li>
-              <li>Adobe suite</li>
-            </ul>
-          </div>
+          <div class = "tools col-6 col-md-4 col-lg-4 col-xl-4 d-flex flex-column">
+            <i class="tools__img fas fa-palette icon fa-2x"></i>
+            <h5 class = "tools__title skills__title ">Tools</h5>
+              <ul class = "tools__list skills__list text-left">
+                <li class ="skills__text">Figma</li>
+                <li class ="skills__text">Git</li>
+                <li class ="skills__text">Adobe suite</li>
+              </ul>
+            </div>
       <!--Digital Comms-->
-          <div class = "dc">
-            <i class="far fa-comment icon"></i>
-            <h5 class = "dc__title">Digital Comms</h5>
-            <ul class = "dc__list">
-              <li>3+ years as a content writer</li>
-              <li>Extensive stakeholder management</li>
-              <li>Senior leader engagement</li>
-            </ul>
-          </div>
+      <div class = "dc col-6 col-md-4 col-lg-4 col-xl-4 d-flex flex-column">
+        <i class="dc__img far fa-comment icon fa-2x"></i>
+        <h5 class = "dc__title skills__title ">Digital Comms</h5>
+          <ul class = "dc__list skills__list text-left">
+            <li class ="skills__text">3y+ as a <a href ="https://imperialbrandsscience.com/our-thoughts/">content creator/writer</a></li>
+            <li class ="skills__text">Stakeholder management</li>
+            <li class ="skills__text">Corporate int/ext communications</li>
+          </ul>
+        </div>
         <!--Project Management-->
-          <div class = "pm">
-            <i class="fas fa-user-cog"></i>
-            <h5 class = "pm__title">Project Management</h5>
-            <ul class = "pm__list">
-              <li>LEAN white belt</li>
-              <li>Lead LEAN green belt team project</li>
+        <div class = "pm col-6 col-md-4 col-lg-4 col-xl-4 d-flex flex-column">
+          <!-- <i class="html__img fas fa-user-cog skills__icon icon fa-3x"></i> -->
+          <i class="pm__img fas fa-user-cog icon fa-2x"></i>
+          <h5 class = "pm__title skills__title ">Project Management </h5>
+            <ul class = "pm__list skills__list text-left">
+              <li class ="skills__text">LEAN white belt </li>
+              <li class ="skills__text">Lead LEAN GB project </li>
             </ul>
           </div>
        </div>
+      </div>
 
-      </section>
+      </div>
 
 <!--Contact section -->
     <section class="page" id = "contact">
