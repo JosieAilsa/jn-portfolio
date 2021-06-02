@@ -1,7 +1,7 @@
 .about__title{
     color: $secondary-color;
-    font-size: 2rem;
     margin-top: 2vh;
+    margin-bottom: 2vh;
     background-color: transparent;
 }
 
@@ -86,7 +86,7 @@ height: 20vh;
 }}*/
 
 
-@media(min-width:1200px){
+@media(min-width:1300px){
 .about__paragraph{
     font-size: 1rem !important;
     padding-top: 50px;
