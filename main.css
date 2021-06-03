@@ -341,7 +341,7 @@ top: 0;
   }
 
   .html, .css, .js, .tools, .pm, .dc {
-    font-size: 4vw;
+    font-size: 3vw;
     margin-bottom: 5px;
   }
 }
@@ -387,7 +387,80 @@ top: 0;
     font-size: 1rem !important;
   }
 }
-.contact__title {
+.contact {
+  height: 90vh;
+}
+.contact .contact__title {
   font-size: 3rem;
   color: #ED6340 !important;
+}
+.contact .contact__container {
+  height: 75vh;
+  position: relative;
+}
+
+@media (min-width: 0px) {
+  .contact__img {
+    min-height: 381px;
+    min-width: 332px;
+    display: block !important;
+    margin: auto !important;
+  }
+
+  .location {
+    position: absolute;
+    top: 35%;
+    left: 26%;
+    font-size: 2vw;
+  }
+
+  .email {
+    position: absolute;
+    top: 35%;
+    left: 51%;
+    font-size: 2vw;
+    hyphens: manual;
+  }
+
+  .location__title, .email__title {
+    font-size: 0.85rem !important;
+  }
+
+  .location__text, .email__text {
+    font-size: 0.65rem !important;
+    hyphens: manual;
+  }
+}
+@media (min-width: 768px) {
+  .contact__img {
+    max-height: 819px;
+    max-width: 686px;
+    display: block !important;
+    margin: auto !important;
+  }
+
+  .location {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+  }
+
+  .email {
+    position: absolute;
+    top: 35%;
+    left: 52%;
+  }
+}
+@media (min-width: 1450px) {
+  .location {
+    position: absolute;
+    top: 35%;
+    left: 39%;
+  }
+
+  .email {
+    position: absolute;
+    top: 35%;
+    left: 55%;
+  }
 }
