@@ -422,6 +422,10 @@ top: 0;
     hyphens: manual;
   }
 
+  .social-icon {
+    margin-top: 10vh;
+  }
+
   .location__title, .email__title {
     font-size: 0.85rem !important;
   }
@@ -455,12 +459,12 @@ top: 0;
   .location {
     position: absolute;
     top: 35%;
-    left: 39%;
+    left: 35% !important;
   }
 
   .email {
     position: absolute;
     top: 35%;
-    left: 55%;
+    left: 49% !important;
   }
 }

@@ -32,6 +32,22 @@
         font-size: 2vw;
         hyphens: manual;
     }
+    .social-icon{
+        margin-top: 10vh;
+    }
+    // .linkedin{
+    //     position: absolute;
+    //     top: 65%;
+    //     left:26%;
+    //     font-size: 2vw;
+    // }
+    // .git{
+    //     position: absolute;
+    //     top: 65%;
+    //     left:51%;
+    //     font-size: 2vw;
+
+    // }
     .location__title, .email__title{
         font-size: 0.85rem !important;
     }
@@ -39,8 +55,6 @@
         font-size: 0.65rem !important;
         hyphens: manual;
     }
-
-
 }
 
 @media (min-width:768px){
@@ -60,16 +74,42 @@
         top: 35%;
         left: 52%;
     }    
+    // .linkedin{
+    //     position: absolute;
+    //     top: 65%;
+    //     left:35%;
+    //     font-size: 2vw;
+    // }
+    // .git{
+    //     position: absolute;
+    //     top: 65%;
+    //     left:52%;
+    //     font-size: 2vw;
+    // }
 }
 
 @media (min-width:1450px){
 .location {
     position: absolute;
     top: 35%;
-    left:39%;
+    left:35% !important;
 }
 .email{
     position: absolute;
     top: 35%;
-    left: 55%;
-}}
+    left: 49% !important;
+}
+
+// .linkedin{
+//     position: absolute;
+//     top: 65%;
+//     left:39%;
+//     font-size: 2vw;
+// }
+// .git{
+//     position: absolute;
+//     top: 65%;
+//     left:55%;
+//     font-size: 2vw;
+//     }
+}
