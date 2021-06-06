@@ -1,31 +1,11 @@
 .about__title{
+    font-size: 3rem;
     color: $secondary-color;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    background-color: transparent;
-}
+    height: 10vh;
 
 .about___text--color{
     color: $tertiary-color !important;
-}
-
-/*.about__paragraph{
-padding-top: 5vh;
-}*/
-/*
-.about___main{
-position: absolute;
-top: 0;
-    .about__container{
-        position: relative;
-        background-color: transparent;
-    }
-    .about__img{
-        position:relative;
-
-    }
-}
-*/
+}}
 
 @media(min-width:0px){
 .about__container {

@@ -18,10 +18,12 @@
  <header class = "container-fluid sticky-top">
         <nav class="  row nav d-flex flex-row flex-nowrap navbar justify-content-start">
           <div class="col-xs-2 col-4 logo-container d-flex justify-content-center">
+            <!--Nav bar logo-->
             <img src="./imgs/logo.svg" alt="logo" class="navbar-brand logo"  width="110px" height="63px">
           </div>
           <!--Nav bar nav-->
           <div class = "navbar-nav d-flex flex-row justify-content-around col">
+             <!-- Links -->
             <div class="col-2 navbar navbar-nav__container">
               <a href="#about" class = "nav-item nav-link active text-lg-left text-sm-right d-none d-sm-block">about</a>
             </div>
@@ -33,7 +35,32 @@
             </div>
             <div class="col-2 navbar navbar-nav__container">
                 <a href="#contact" class = "nav-item nav-link active text-lg-left text-sm-right d-none d-sm-block">contact</a>
+                <!-- Hamburger drop down small devices -->
+                <button class="navbar-toggler toggler-example d-sm-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text">
+                <i class="hamburger fas fa-bars fa-1x"></i></span></button>
             </div>
+          </nav>
+                  <!-- Collapsible content-->
+                  <div class="collapse navbar-collapse d-sm-none" id="navbarSupportedContent1" >
+                    <!-- Links --> 
+                    <ul class="navbar-nav d-flex flex-column justify-content-around align-items-center">
+                      <li class="navbar-item active">
+                        <a class="navbar-collapse__item" href="#about">about</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="navbar-collapse__item" href="#projects">projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="navbar-collapse__item" href="#skills">skills</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="navbar-collapse__item" href="#contact">contact</a>
+                      </li>
+                    </ul>
+                    <!-- Links -->
+                  </div>
+                  <!-- Collapsible content -->
           </div>
         </nav>
       </header>
@@ -41,7 +68,7 @@
 <!---Landing page-->
       <section class="page">
         <div class="landing">
-        <!-- Landing Hi -->
+        <!-- Landing hi -->
           <div class = "row justify-content-center align-items-center">
             <div class = "col-xs-12 col-md-10 col-xl-6">
               <h1 class="landing__hi text-nowrap display-1 d-flex justify-content-center">Hi, I'm Josie</h1>
@@ -72,10 +99,10 @@
 <!---About section-->
       <section class="page" id = "about">
           <div class = "row">
-            <div class = "col-12 d-flex justify-content-center">
-              <h1 class="about__title text-sm-center ">About me ...</h1>
-            </div>
+            <!---About title-->
+              <h2 class = "col-12 contact__title text-center">About me</h2>
           </div>
+          <!---About main secton-->
           <div class = "row d-flex justify-content-center align-items-center about__main about__container text-center">
             <div class = " col-7 col-md-6 col-lg-5 col-xl-3 text-right about__paragraph"  >
                 <p class = "about__text">I discovered the world of web development in my first graduate job
@@ -89,21 +116,17 @@
                   _nology.
                 </p>
             </div>
-            <!--
-            <div class = "about__img col-8 col-md-6 col-lg-4">
-              <img src="./imgs/about-bg.svg" alt="background_svg">
-          </div>--->
         </div class = "row">
           </section>
+           <!---About personal-->
               <article class="personal row d-flex justify-content-center">
                 <div class="personal__container col-12 col-md-6 col-lg-6 col-xl-4 d-flex justify-content-center align-items-center">
-                <p class = "personal__text col-10 col-xl-9 text-xs-center text-center" >Chilling in the sun with a beer, a good book and my cat, Derek.</p> 
+                  <p class = "personal__text col-10 col-xl-9 text-xs-center text-center" >Chilling in the sun with a beer, a good book and my cat, Derek.</p> 
                 </div>
                 <div class ="personal__derek col-3  d-flex justify-content-center align-self-center align-items-center">
-                <img src="./imgs/derek.png" alt="derek the cat" class = "personal__img">
-                </div>
-                </div>  
-            </article>
+                  <img src="./imgs/derek.png" alt="derek the cat" class = "personal__img">
+                </div> 
+               </article>
         </div>
           <!--Scroll -->
         <div class="c-scroll">
@@ -138,41 +161,44 @@
 
 <!--Skills section -->
       <section class="page" id = "skills">
+        <!--Skills title -->
         <div class = "row">
           <h1 class = "col-12 text-center skills__header d-flex justify-content-center"> Skills </h1>
         </div>
+        <!--Skills container for repeating bg -->
         <div class = "skills__container d-flex justify-content-center align-items-center text-center">
+        <!--Skills text -->
           <div class = "row">
-          <!--HTML-->
-              <div class = "html col-6 col-md-4 col-lg-4 col-xl-4 d-flex flex-column">
-                <i class="html__img fab fa-html5 icon fa-2x"></i>
-                <h5 class = "html__title skills__title ">HTML</h5>
-                  <ul class = "html__list skills__list text-left">
-                    <li class ="skills__text">BEM</li>
-                    <li class ="skills__text">Etc</li>
-                    <li class ="skills__text">Etc</li>
-                  </ul>
+          <!--HTML--> 
+            <div class = "html col-6 col-md-4 col-lg-4 col-xl-4 d-flex flex-column">
+              <i class="html__img fab fa-html5 icon fa-2x"></i>
+              <h5 class = "html__title skills__title ">HTML</h5>
+                <ul class = "html__list skills__list text-left">
+                  <li class ="skills__text">BEM</li>
+                  <li class ="skills__text">Etc</li>
+                  <li class ="skills__text">Etc</li>
+                </ul>
               </div>
           <!--CSS-->
-          <div class = "css col-6 col-md-4 col-lg-4 col-xl-4 d-flex flex-column">
-            <i class="css__img fab fa-css3-alt icon fa-2x"></i>
-            <h5 class = "html__title skills__title ">CSS</h5>
-              <ul class = "css__list skills__list text-left">
-                <li class ="skills__text">SCSS</li>
-                <li class ="skills__text">Etc</li>
-                <li class ="skills__text">Etc</li>
-              </ul>
+            <div class = "css col-6 col-md-4 col-lg-4 col-xl-4 d-flex flex-column">
+              <i class="css__img fab fa-css3-alt icon fa-2x"></i>
+              <h5 class = "html__title skills__title ">CSS</h5>
+                <ul class = "css__list skills__list text-left">
+                  <li class ="skills__text">SCSS</li>
+                  <li class ="skills__text">Etc</li>
+                  <li class ="skills__text">Etc</li>
+                </ul>
             </div>
           <!--JS-->
-          <div class = "js col-6 col-md-4 col-lg-4 col-xl-4 d-flex flex-column">
-            <i class="js__img fab fa-js-square icon fa-2x"></i>
-            <h5 class = "js__title skills__title ">JS</h5>
-              <ul class = "js__list skills__list text-left">
+           <div class = "js col-6 col-md-4 col-lg-4 col-xl-4 d-flex flex-column">
+             <i class="js__img fab fa-js-square icon fa-2x"></i>
+             <h5 class = "js__title skills__title ">JS</h5>
+             <ul class = "js__list skills__list text-left">
                 <li class ="skills__text">JQuery</li>
                 <li class ="skills__text">Node</li>
                 <li class ="skills__text">Etc</li>
-              </ul>
-            </div>
+            </ul>
+          </div>
           <!--tools-->
           <div class = "tools col-6 col-md-4 col-lg-4 col-xl-4 d-flex flex-column">
             <i class="tools__img fas fa-palette icon fa-2x"></i>
@@ -182,7 +208,7 @@
                 <li class ="skills__text">Git</li>
                 <li class ="skills__text">Adobe suite</li>
               </ul>
-            </div>
+          </div>
       <!--Digital Comms-->
       <div class = "dc col-6 col-md-4 col-lg-4 col-xl-4 d-flex flex-column">
         <i class="dc__img far fa-comment icon fa-2x"></i>

@@ -35,7 +35,7 @@ font-size: 0.5rem !important;
 @media(min-width:768px){
     .skills__container{
         width: 100%;
-        height: 55vh;
+        height: 65vh !important;
         background-image: url(../imgs/skills-bg.svg) !important;
         background-size: contain;
         background-repeat: repeat-x;
@@ -55,7 +55,7 @@ font-size: 0.5rem !important;
 
 }
 
-@media(min-width:1200px){
+@media(min-width:1400px){
     .skills__container{
         width: 100%;
         height: 85vh;

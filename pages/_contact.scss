@@ -30,30 +30,35 @@
         margin: auto !important;
     }
     .contact__grid{
-        position: absolute !important;
+        position: absolute;
         top:43%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 }
-
-@media (min-width:768px){
-    .contact__img{
-        display: block !important;
-        margin: auto !important;
-    }
-    .contact__grid{
-        position: absolute !important;
-        top:50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+@media (min-width:1000px){
     .linkedin, .github {
-        margin-top: 2.5vh !important;
+        margin-top: 2.5vh;
     }
     .location, .email {
-        font-size: 1.5vw !important ;
+        font-size: 1.5vw  ;
+    }
+    .contact__grid{
+        position: absolute;
+        top:50%;
+        left: 50%;
     }
 }
 
+
+@media(min-width:1200px){
+       .location__title, .email__title{
+           font-size: 1rem !important;
+       }
+       .location__text, .email__text{
+           font-size: 0.75rem !important;
+           hyphens: manual;
+           min-height: 55px;
+        }
+    }
 
