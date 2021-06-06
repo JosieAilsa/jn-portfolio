@@ -390,40 +390,20 @@ top: 0;
 .contact {
   height: 90vh;
 }
-.contact .contact__title {
+
+.contact__title {
   font-size: 3rem;
   color: #ED6340 !important;
 }
-.contact .contact__container {
+
+.contact__container {
   height: 75vh;
   position: relative;
 }
 
 @media (min-width: 0px) {
-  .contact__img {
-    min-height: 381px;
-    min-width: 332px;
-    display: block !important;
-    margin: auto !important;
-  }
-
-  .location {
-    position: absolute;
-    top: 35%;
-    left: 26%;
+  .location, .email, .font-size {
     font-size: 2vw;
-  }
-
-  .email {
-    position: absolute;
-    top: 35%;
-    left: 51%;
-    font-size: 2vw;
-    hyphens: manual;
-  }
-
-  .social-icon {
-    margin-top: 10vh;
   }
 
   .location__title, .email__title {
@@ -433,38 +413,40 @@ top: 0;
   .location__text, .email__text {
     font-size: 0.65rem !important;
     hyphens: manual;
+    min-height: 55px;
   }
-}
-@media (min-width: 768px) {
+
   .contact__img {
-    max-height: 819px;
-    max-width: 686px;
+    max-height: 100%;
     display: block !important;
     margin: auto !important;
   }
 
-  .location {
-    position: absolute;
-    top: 35%;
-    left: 35%;
-  }
-
-  .email {
-    position: absolute;
-    top: 35%;
-    left: 52%;
+  .contact__grid {
+    position: absolute !important;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
-@media (min-width: 1450px) {
-  .location {
-    position: absolute;
-    top: 35%;
-    left: 35% !important;
+@media (min-width: 768px) {
+  .contact__img {
+    display: block !important;
+    margin: auto !important;
   }
 
-  .email {
-    position: absolute;
-    top: 35%;
-    left: 49% !important;
+  .contact__grid {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .linkedin, .github {
+    margin-top: 2.5vh !important;
+  }
+
+  .location, .email {
+    font-size: 1.5vw !important;
   }
 }

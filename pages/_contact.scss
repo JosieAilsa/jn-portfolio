@@ -1,6 +1,7 @@
 
 .contact{
     height: 90vh;
+}
 .contact__title{
     font-size: 3rem;
     color: $secondary-color !important;
@@ -8,108 +9,51 @@
 .contact__container{
     height: 75vh;
     position: relative;
-
-}}
+}
 
 
 @media (min-width:0px){
-    .contact__img{
-        min-height:381px;
-        min-width:332px;
-        display: block !important;
-        margin: auto !important;
-    }
-    .location {
-        position: absolute;
-        top: 35%;
-        left:26%;
-        font-size: 2vw;
-    }
-    .email{
-        position: absolute;
-        top: 35%;
-        left: 51%;
-        font-size: 2vw;
-        hyphens: manual;
-    }
-    .social-icon{
-        margin-top: 10vh;
-    }
-    // .linkedin{
-    //     position: absolute;
-    //     top: 65%;
-    //     left:26%;
-    //     font-size: 2vw;
-    // }
-    // .git{
-    //     position: absolute;
-    //     top: 65%;
-    //     left:51%;
-    //     font-size: 2vw;
-
-    // }
+    .location,.email, .font-size{
+     font-size: 2vw;
+    } 
     .location__title, .email__title{
         font-size: 0.85rem !important;
     }
     .location__text, .email__text{
         font-size: 0.65rem !important;
         hyphens: manual;
+        min-height: 55px;
+    }
+    .contact__img{
+        max-height:100%;
+        display: block !important;
+        margin: auto !important;
+    }
+    .contact__grid{
+        position: absolute !important;
+        top:43%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
 @media (min-width:768px){
     .contact__img{
-        max-height:819px;
-        max-width:686px;
         display: block !important;
         margin: auto !important;
     }
-    .location {
-        position: absolute;
-        top: 35%;
-        left:35%;
+    .contact__grid{
+        position: absolute !important;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-    .email{
-        position: absolute;
-        top: 35%;
-        left: 52%;
-    }    
-    // .linkedin{
-    //     position: absolute;
-    //     top: 65%;
-    //     left:35%;
-    //     font-size: 2vw;
-    // }
-    // .git{
-    //     position: absolute;
-    //     top: 65%;
-    //     left:52%;
-    //     font-size: 2vw;
-    // }
+    .linkedin, .github {
+        margin-top: 2.5vh !important;
+    }
+    .location, .email {
+        font-size: 1.5vw !important ;
+    }
 }
 
-@media (min-width:1450px){
-.location {
-    position: absolute;
-    top: 35%;
-    left:35% !important;
-}
-.email{
-    position: absolute;
-    top: 35%;
-    left: 49% !important;
-}
 
-// .linkedin{
-//     position: absolute;
-//     top: 65%;
-//     left:39%;
-//     font-size: 2vw;
-// }
-// .git{
-//     position: absolute;
-//     top: 65%;
-//     left:55%;
-//     font-size: 2vw;
-//     }
-}
