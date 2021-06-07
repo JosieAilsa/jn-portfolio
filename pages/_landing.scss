@@ -4,12 +4,12 @@
 .landing__hi {
     font-size: 2rem;
     color: $secondary-color !important;
-    margin-top: 4vh;
+    margin-top: 2vh;
     font-size:10vw;
     }
 .landing__intro{
     font-size: 5vw;
-    padding-bottom: 2vh;
+    margin-bottom: 3vh;
     }
 .svg-container{
     height: 50vh;
@@ -28,14 +28,12 @@
   @media (min-width:992px) {
     .landing__hi {
         font-size:5em !important;
-        color: $secondary-color !important;
-        margin-top: 4vh;
     }
       .landing__intro{
           font-size: 2.75rem !important;
     }
  }
-  @media (min-width:1200px) {
+  @media (min-width:1400px) {
     .landing__hi {
         font-size: 6rem !important;
         color: $secondary-color !important;
@@ -47,15 +45,3 @@
     }
   }
 
-//   .landing__hi { 
-   
-//     background-color: transparent;
-// }
-
-// .landing__intro{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     font-size: 2.5em;
-//     background-color: transparent;
-//     margin-top: 1vh}

@@ -46,12 +46,11 @@
 
 .c-scroll{
     text-align: center;
-    margin-top: 2vh;
-    margin-bottom: 5vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     
 .c-scroll__text{
     margin:5px;
-    margin-top: 2vh;
     }
 .s-scroll__img-conainer{
     height: 5vh;
@@ -68,10 +67,6 @@
     min-height: 50vh;
 
 .projects__carousel__circle{
-    //  min-width: 158px;
-    //  min-height: 162px;
-    //  max-width: 306px;
-    //  max-height: 312px;
     max-height: 35%;
     max-width: 35%;
     text-align: center;
