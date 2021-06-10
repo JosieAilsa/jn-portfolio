@@ -75,18 +75,6 @@ body {
   color: #FAF4ED;
 }
 
-.c-scroll {
-  text-align: center;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-}
-.c-scroll .c-scroll__text {
-  margin: 5px;
-}
-.c-scroll .s-scroll__img-conainer {
-  height: 5vh;
-}
-
 .c-carousel {
   background-image: url("./imgs/projects-bg.svg");
   background-repeat: no-repeat;
@@ -142,11 +130,12 @@ body {
 .landing .landing__hi {
   font-size: 2rem;
   color: #ED6340 !important;
-  margin-top: 2vh;
+  margin-top: 4vh;
   font-size: 10vw;
 }
 .landing .landing__intro {
   font-size: 5vw;
+  margin-top: 3vh;
   margin-bottom: 3vh;
 }
 .landing .svg-container {
@@ -175,7 +164,7 @@ body {
   .landing__hi {
     font-size: 6rem !important;
     color: #ED6340 !important;
-    margin-top: 4vh;
+    margin-top: 5vh;
   }
 
   .landing__intro {
@@ -183,13 +172,15 @@ body {
     margin-bottom: 5vh;
   }
 }
-.about__title {
+.about {
+  height: 90vh;
+}
+.about .about__title {
   font-size: 3rem;
   color: #ED6340;
   margin-top: 5vh;
 }
-
-.about___text--color {
+.about .about___text--color {
   color: #197BBD !important;
 }
 
@@ -273,6 +264,10 @@ body {
     padding-top: 20px !important;
   }
 }
+.projects {
+  height: 90vh;
+}
+
 .projects__title {
   color: #ED6340;
   font-size: 3rem;
