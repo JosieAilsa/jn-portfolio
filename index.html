@@ -61,55 +61,16 @@
       </header>
   <main class="container-fluid">
 <!---Landing page-->
-      <div class="landing">
-        <!-- Landing hi -->
-          <div class = "row justify-content-center align-items-center">
-            <div class = "col-xs-12 col-md-10 col-xl-6">
-              <h1 class="landing__hi text-nowrap display-1 d-flex justify-content-center">Hi, I'm Josie</h1>
-            </div>
-          </div>
-        <!-- Landing intro -->
-          <div class= "row d-flex justify-content-center align-items-center">
-            <div class = "col-8 d-flex justify-content-center align-items-center">
-              <h2 class ="landing__intro text-nowrap">I'm a Bristol-based junior UI developer.</h2>
-            </div>
-          </div>
-        <!-- Landing image -->
-          <div class = "row d-flex justify-content-center align-items-center">
-            <div class = " d-flex justify-content-center col-xs-12 col-md-10 col-xl-8 align-self-center svg-container">
-              <img class = "landing__img" src="./imgs/landing_img2.svg" alt="landing_img2" srcset="" height = "100%" width="100%" >
-            </div>
-           </div>
-      </div>
-<!---About section-->
-      <section class="page" id = "about" class ="about">
-            <!---About title-->
-            <h2 class = "col-12 about__title text-center">About me</h2>
-          <!---About main secton-->
-          <div class = "row d-flex justify-content-center align-items-center about__main about__container text-center">
-            <div class = " col-7 col-md-6 col-lg-5 col-xl-3 text-right about__paragraph"  >
-                <p class = "about__text">I discovered the world of web development in my first graduate job
-                  where – as
-                  <span class = "about___text--color"> digital content writer and creator </span> 
-                  – I helped launch and latterly manage an editorial website. The moment I tried my hand at
-                  some basic HTML and CSS in wordpress, I knew 
-                  <span class = "about___text--color"> front-end development</span> 
-                  was the right path for me. So, alongside my full-time comms role at a FTSE
-                  30 company, I took on a part-time software development course with
-                  _nology.
-                </p>
-            </div>
-          </div>
-           <!---About personal-->
-              <article class="personal row d-flex justify-content-center">
-                <div class="personal__container col-12 col-md-6 col-lg-6 col-xl-4 d-flex justify-content-center align-items-center">
-                  <p class = "personal__text col-10 col-xl-9 text-xs-center text-center" >Chilling in the sun with a beer, a good book and my cat, Derek.</p> 
-                </div>
-                <div class ="personal__derek col-3  d-flex justify-content-center align-self-center align-items-center">
-                  <img src="./imgs/derek.png" alt="derek the cat" class = "personal__img">
-                </div> 
-              </article>
-        </section>
+      <section class="landing col-12">
+        <div id = "hi__text">
+          <h1 class="hi__hi text-nowrap display-1 d-flex justify-content-center">Hi, I'm Josie</h1>
+          <h2 class ="hi__intro text-nowrap d-flex justify-content-around">
+        </div>
+          I'm a<span id = "hi__location"> Bristol</span>-based <span id = "hi__role"> junior developer.</span></h2>
+        <div class = " d-flex justify-content-center align-self-center svg-container">
+          <img class = "landing__img" src="./imgs/landing_img2.svg" alt="landing_img2" srcset="" height = "100%" width="100%" >
+        </div>
+      </section>
 <!--- Projects section-->
       <section class = "page" id = "projects">
         <div class = "projects text-center">
@@ -200,7 +161,34 @@
        </div>
       </div>
       </div>
-
+      <!-- <section class="page" id = "about" class ="about"> -->
+        <!-- -About title
+        <h2 class = "col-12 about__title text-center">About me</h2>
+      <!---About main secton-->
+      <!-- <div class = "row d-flex justify-content-center align-items-center about__main about__container text-center">
+        <div class = " col-7 col-md-6 col-lg-5 col-xl-3 text-right about__paragraph"  >
+            <p class = "about__text">I discovered the world of web development in my first graduate job
+              where – as
+              <span class = "about___text--color"> digital content writer and creator </span> 
+              – I helped launch and latterly manage an editorial website. The moment I tried my hand at
+              some basic HTML and CSS in wordpress, I knew 
+              <span class = "about___text--color"> front-end development</span> 
+              was the right path for me. So, alongside my full-time comms role at a FTSE
+              30 company, I took on a part-time software development course with
+              _nology.
+            </p>
+        </div>
+      </div> -->
+       <!-- -About personal
+          <article class="personal row d-flex justify-content-center">
+            <div class="personal__container col-12 col-md-6 col-lg-6 col-xl-4 d-flex justify-content-center align-items-center">
+              <p class = "personal__text col-10 col-xl-9 text-xs-center text-center" >Chilling in the sun with a beer, a good book and my cat, Derek.</p> 
+            </div>
+            <div class ="personal__derek col-3  d-flex justify-content-center align-self-center align-items-center">
+              <img src="./imgs/derek.png" alt="derek the cat" class = "personal__img"> -->
+            <!-- </div> 
+          </article> --> -->
+        <!-- </section> -->
 <!--Contact section -->
       <section class="page" id = "contact" class = "contact">
         <div class = "row">

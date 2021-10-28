@@ -126,52 +126,46 @@ body {
 
 .landing {
   height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: space-between;
+  align-items: center;
 }
 .landing .landing__hi {
-  font-size: 2rem;
-  color: #ED6340 !important;
-  margin-top: 4vh;
-  font-size: 10vw;
+  color: #ED6340;
+  width: 10vmin;
+  margin-top: 2vh;
+  background-color: transparent;
 }
 .landing .landing__intro {
-  font-size: 5vw;
+  width: 7vmin;
   margin-top: 3vh;
   margin-bottom: 3vh;
+  font-size: 5vmin;
 }
-.landing .svg-container {
-  height: 50vh;
+.landing .landing__intro #landing__location {
+  white-space: pre;
+  color: #ED6340;
 }
-.landing .landing__img {
+.landing .landing__intro #landing__role {
+  white-space: pre;
+  color: #197BBD;
+}
+.landing .landing__intro .svg-container {
+  height: 40vh;
+  width: 40vmin;
+}
+.landing .landing__intro .landing__img {
   display: block;
   margin: auto;
   text-align: center;
 }
-.landing .landing__img:hover {
+.landing .landing__intro .landing__img:hover {
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
 }
 
-@media (min-width: 992px) {
-  .landing__hi {
-    font-size: 5em !important;
-  }
-
-  .landing__intro {
-    font-size: 2.75rem !important;
-  }
-}
-@media (min-width: 1400px) {
-  .landing__hi {
-    font-size: 6rem !important;
-    color: #ED6340 !important;
-    margin-top: 5vh;
-  }
-
-  .landing__intro {
-    font-size: 3rem !important;
-    margin-bottom: 5vh;
-  }
-}
 .about {
   height: 90vh;
 }
