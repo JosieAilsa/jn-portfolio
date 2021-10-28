@@ -37,8 +37,8 @@ body {
 }
 
 .nav {
-  box-shadow: 0px 14px 12px rgba(30, 30, 36, 0.07);
   font-family: "Red Hat Display", sans-serif;
+  padding: 0px;
 }
 .nav .logo {
   flex-basis: auto;
@@ -132,36 +132,39 @@ body {
   align-content: space-between;
   align-items: center;
 }
-.landing .landing__hi {
+.landing .hi__hi {
   color: #ED6340;
-  width: 10vmin;
-  margin-top: 2vh;
   background-color: transparent;
+  text-align: center;
 }
-.landing .landing__intro {
-  width: 7vmin;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
+.landing .hi__intro {
+  margin-bottom: 2vh;
   font-size: 5vmin;
 }
-.landing .landing__intro #landing__location {
+.landing .hi__intro #hi__location {
   white-space: pre;
   color: #ED6340;
 }
-.landing .landing__intro #landing__role {
+.landing .hi__intro #hi__role {
   white-space: pre;
   color: #197BBD;
 }
-.landing .landing__intro .svg-container {
-  height: 40vh;
-  width: 40vmin;
+@media only screen and (min-width: 500px) and (max-width: 1366px) {
+  .landing .svg-container {
+    width: 65vmin;
+  }
 }
-.landing .landing__intro .landing__img {
+@media only screen and (min-width: 1366px) {
+  .landing .svg-container {
+    width: 40vmin;
+  }
+}
+.landing .svg-container .landing__img {
   display: block;
   margin: auto;
   text-align: center;
 }
-.landing .landing__intro .landing__img:hover {
+.landing .svg-container .landing__img .landing__img:hover {
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
 }
@@ -264,10 +267,8 @@ body {
 
 .projects__title {
   color: #ED6340;
-  font-size: 3rem;
   background-color: transparent;
-  margin-top: 5vh;
-  margin-right: 0px;
+  text-align: center;
 }
 
 .skills__header {

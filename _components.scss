@@ -5,8 +5,8 @@
 
 }
 .nav{
-    box-shadow: 0px 14px 12px rgba(30, 30, 36, 0.07);
     font-family: $font-display;
+    padding: 0px;
 
     .logo{
         flex-basis: auto;
@@ -26,7 +26,6 @@
         transition: all .2s ease-in-out;
         text-decoration: underline $secondary-color;
 }}
-
 
 
     .navbar-collapse {

@@ -6,59 +6,44 @@
     align-content: space-between;
     align-items: center;
 
-.hi__hi {
-    color: $secondary-color;
-    width: 50vmin;
-    margin-top: 2vh;
-    background-color: transparent;
-    }
-    
-.hi__intro{
-    width:7vmin;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-    font-size: 5vmin;
-
-    #landing__location{
-         white-space: pre;
+    .hi__hi {
         color: $secondary-color;
-    }
-    #landing__role{
-        white-space: pre;
-        color: $tertiary-color;
-    }
-    
-.svg-container{
-    height: 40vh;
-    width: 40vmin;
-    }
-  .landing__img {
-   display: block;
-    margin: auto;
-    text-align: center;
-    }
-    .landing__img:hover{
-    transform: scale(1.1);
-    transition: all .2s ease-in-out;
-    }
-}
-}
+        background-color: transparent;
+        text-align: center;
+        }
+        
+    .hi__intro {
+        margin-bottom: 2vh;
+        font-size: 5vmin;
 
-//   @media (min-width:992px) {
-//     .landing__hi {
-//         font-size:5em !important;
-//     }
-//       .landing__intro{
-//           font-size: 2.75rem !important;
-//     }
-//  }
-//   @media (min-width:1400px) {
-//     .landing__hi {
-//         font-size: 6rem !important;
-//         color: $secondary-color !important;
-//         margin-top: 5vh;
-//     }
-//     .landing__intro{
-//         font-size: 3rem !important;
-//         margin-bottom: 5vh;
+        #hi__location{
+            white-space: pre;
+            color: $secondary-color;
+        }
+        #hi__role{
+            white-space: pre;
+            color: $tertiary-color;
+        }
+    }
+        
+    .svg-container{
+        @media only screen and (min-width: 500px) and (max-width: 1366px) {
+            width: 65vmin;
+        }
+        @media only screen and (min-width: 1366px){
+            width: 40vmin;
+        }
+    .landing__img {
+        display: block;
+        margin: auto;
+        text-align: center;
+        .landing__img:hover {
+        transform: scale(1.1);
+        transition: all .2s ease-in-out;
+        }
+    }
+    }
+    }
+
+
 
