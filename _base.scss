@@ -13,12 +13,14 @@ $font-body: "Montserrat", sans-serif;
     background-color: $background-color;
 }
 
+
 h1,h2,h3,h4,h5 {
     font-family: $font-display;
 }
 
 p{
     font-family: $font-body;
+    font-size: smaller;
 }
 
 main{
@@ -37,4 +39,23 @@ main{
 
 body {
 color: $primary-color;
+}
+
+.title {
+    font-size: 3em;
+    color: $secondary-color;
+    text-align: center;
+}
+.subtitle{
+    font-size: 5vmin;
+    color: $secondary-color;
+    text-align: center;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: center;
 }

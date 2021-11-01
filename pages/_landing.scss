@@ -1,19 +1,21 @@
 .landing{
     height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: space-between;
-    align-items: center;
+    @media only screen and (max-width: 1026px) {
+        justify-content: space-evenly;
+    }
+    #hi__text{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center;
+        }
 
     .hi__hi {
-        color: $secondary-color;
-        background-color: transparent;
-        text-align: center;
+        margin: 1vmin;
         }
         
     .hi__intro {
-        margin-bottom: 2vh;
+        margin: 2vmin;
         font-size: 5vmin;
 
         #hi__location{
@@ -25,10 +27,12 @@
             color: $tertiary-color;
         }
     }
-        
+    .landing__cta{
+        margin-top: 3vmin;
+    }
     .svg-container{
         @media only screen and (min-width: 500px) and (max-width: 1366px) {
-            width: 65vmin;
+            width: 56vmin;
         }
         @media only screen and (min-width: 1366px){
             width: 40vmin;
@@ -37,13 +41,13 @@
         display: block;
         margin: auto;
         text-align: center;
-        .landing__img:hover {
-        transform: scale(1.1);
-        transition: all .2s ease-in-out;
         }
-    }
+        .landing__img:hover {
+            transform: scale(1.1);
+            transition: all .3s ease-in-out;
+            }
     }
     }
 
-
+   
 
