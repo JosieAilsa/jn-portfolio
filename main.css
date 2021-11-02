@@ -176,27 +176,28 @@ body {
   white-space: pre;
   color: #197BBD;
 }
-.landing .landing__cta {
+.landing .hi__intro .landing__cta {
   margin-top: 3vmin;
 }
-@media only screen and (min-width: 500px) and (max-width: 1366px) {
-  .landing .svg-container {
-    width: 56vmin;
-  }
-}
-@media only screen and (min-width: 1366px) {
-  .landing .svg-container {
-    width: 40vmin;
-  }
-}
-.landing .svg-container .landing__img {
+.landing .landing__img {
   display: block;
   margin: auto;
   text-align: center;
 }
-.landing .svg-container .landing__img:hover {
+.landing .landing__img:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1366px) {
+  .svg-container {
+    width: 55vmin;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  .svg-container {
+    width: 50vmin;
+  }
 }
 
 .projects {
@@ -266,7 +267,7 @@ body {
   height: 80%;
 }
 #contact .contact__bg {
-  background-image: url("../imgs/contact-bg.svg");
+  background-image: url("./imgs/contact-bg-01.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

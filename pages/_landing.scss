@@ -26,18 +26,13 @@
             white-space: pre;
             color: $tertiary-color;
         }
-    }
-    .landing__cta{
+    
+        .landing__cta{
         margin-top: 3vmin;
-    }
-    .svg-container{
-        @media only screen and (min-width: 500px) and (max-width: 1366px) {
-            width: 56vmin;
         }
-        @media only screen and (min-width: 1366px){
-            width: 40vmin;
         }
-    .landing__img {
+          
+         .landing__img {
         display: block;
         margin: auto;
         text-align: center;
@@ -46,8 +41,14 @@
             transform: scale(1.1);
             transition: all .3s ease-in-out;
             }
-    }
-    }
+        }
 
-   
-
+ .svg-container{
+    @media only screen and (min-width: 500px) and (max-width: 1366px) {
+        width: 55vmin;
+    }
+    @media only screen and (min-width: 1366px){
+        width: 50vmin;
+    }
+}
+  
