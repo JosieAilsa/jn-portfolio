@@ -60,7 +60,7 @@ body {
 .nav {
   font-family: "Red Hat Display", sans-serif;
   padding: 0px;
-  font-size: small;
+  width: 100%;
 }
 .nav .logo {
   flex-basis: auto;
@@ -115,7 +115,9 @@ body {
 .carousel .carousel__button-left:hover, .carousel .carousel__button-right:hover {
   transform: scale(1.2);
   transition: all 0.2s ease-in-out;
-  fill: #197BBD;
+}
+.carousel .carousel__button-left:hover #Rectangle_1, .carousel .carousel__button-left:hover #Rectangle_1-2, .carousel .carousel__button-left:hover #Rectangle_2, .carousel .carousel__button-left:hover #Rectangle_2-2, .carousel .carousel__button-right:hover #Rectangle_1, .carousel .carousel__button-right:hover #Rectangle_1-2, .carousel .carousel__button-right:hover #Rectangle_2, .carousel .carousel__button-right:hover #Rectangle_2-2 {
+  stroke: #197BBD;
 }
 
 .carousel__description {

@@ -7,7 +7,8 @@
 .nav{
     font-family: $font-display;
     padding: 0px;
-    font-size: small;
+    width: 100%;
+
 
     .logo{
         flex-basis: auto;
@@ -45,8 +46,6 @@
     }
 }
 
-
-
 // Projects carousel
 .carousel{
     display: flex;
@@ -66,8 +65,10 @@
     .carousel__button-left:hover, .carousel__button-right:hover{
         transform: scale(1.2);
         transition: all .2s ease-in-out;
-        fill: $tertiary-color;
-    }
+        #Rectangle_1, #Rectangle_1-2, #Rectangle_2, #Rectangle_2-2 {
+            stroke: $tertiary-color;
+            }
+        }
 
 }
 
@@ -96,3 +97,5 @@
         border: 2px $tertiary-color;
         }
     
+
+       
