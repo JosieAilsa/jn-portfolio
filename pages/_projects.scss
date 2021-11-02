@@ -1,13 +1,8 @@
 .projects{
     height: 90vh;
+    @media only screen and (max-width: 1026px) {
+        justify-content: space-evenly;
+    }
+
+   
 }
-
-
-.projects__title{
-    color: $secondary-color;
-    font-size: 3rem;
-    background-color: transparent;
-    margin-top: 5vh;
-    margin-right: 0px;
-}
-

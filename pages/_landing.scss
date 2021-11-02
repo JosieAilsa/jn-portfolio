@@ -1,48 +1,53 @@
 .landing{
     height: 90vh;
+    @media only screen and (max-width: 1026px) {
+        justify-content: space-evenly;
+    }
+    #hi__text{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center;
+        }
 
-.landing__hi {
-    font-size: 2rem;
-    color: $secondary-color !important;
-    margin-top: 4vh;
-    font-size:10vw;
-    }
-.landing__intro{
-    font-size: 5vw;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-    }
-.svg-container{
-    height: 50vh;
-    }
-  .landing__img {
-   display: block;
-    margin: auto;
-    text-align: center;
-    }
-    .landing__img:hover{
-    transform: scale(1.1);
-    transition: all .2s ease-in-out;
-    }
-}
+    .hi__hi {
+        margin: 1vmin;
+        }
+        
+    .hi__intro {
+        margin: 2vmin;
+        font-size: 5vmin;
 
-  @media (min-width:992px) {
-    .landing__hi {
-        font-size:5em !important;
+        #hi__location{
+            white-space: pre;
+            color: $secondary-color;
+        }
+        #hi__role{
+            white-space: pre;
+            color: $tertiary-color;
+        }
     }
-      .landing__intro{
-          font-size: 2.75rem !important;
+    .landing__cta{
+        margin-top: 3vmin;
     }
- }
-  @media (min-width:1400px) {
-    .landing__hi {
-        font-size: 6rem !important;
-        color: $secondary-color !important;
-        margin-top: 5vh;
+    .svg-container{
+        @media only screen and (min-width: 500px) and (max-width: 1366px) {
+            width: 56vmin;
+        }
+        @media only screen and (min-width: 1366px){
+            width: 40vmin;
+        }
+    .landing__img {
+        display: block;
+        margin: auto;
+        text-align: center;
+        }
+        .landing__img:hover {
+            transform: scale(1.1);
+            transition: all .3s ease-in-out;
+            }
     }
-    .landing__intro{
-        font-size: 3rem !important;
-        margin-bottom: 5vh;
     }
-  }
+
+   
 

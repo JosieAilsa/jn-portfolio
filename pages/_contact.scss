@@ -1,64 +1,65 @@
 
-.contact{
+#contact{
     height: 90vh;
-}
-.contact__title{
-    font-size: 3rem;
-    color: $secondary-color !important;
-}
-.contact__container{
-    height: 75vh;
-    position: relative;
-}
+
+    .shape {
+        height: 80%;
+    }
 
 
-@media (min-width:0px){
-    .location,.email, .font-size{
-     font-size: 2vw;
-    } 
-    .location__title, .email__title{
-        font-size: 0.85rem !important;
-    }
-    .location__text, .email__text{
-        font-size: 0.65rem !important;
-        hyphens: manual;
-        min-height: 55px;
-    }
-    .contact__img{
-        max-height:100%;
-        display: block !important;
-        margin: auto !important;
-    }
-    .contact__grid{
-        position: absolute;
-        top:43%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-@media (min-width:1000px){
-    .linkedin, .github {
-        margin-top: 2.5vh;
-    }
-    .location, .email {
-        font-size: 1.5vw  ;
-    }
-    .contact__grid{
-        position: absolute;
-        top:50%;
-        left: 50%;
-    }
-}
-
-
-@media(min-width:1300px){
-       .location__title, .email__title{
-           font-size: 1rem !important;
-       }
-       .location__text, .email__text{
-           font-size: 0.75rem !important;
-           hyphens: manual;
-           min-height: 55px;
+    .contact__bg{
+        background-image: url("../imgs/contact-bg.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 75vh;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         }
+
+        .contact__container {
+            height: 30%;
+        }
+
+        .contact-item{
+            height: 15vh;
+            @media only screen and (max-width: 375px) {
+                height: 7.5vh;
+                }
+        }
+
+        .contact-item___text {
+            display: none;
+            color: $primary-color;
+                @media only screen and (max-width: 375px) {
+                    font-size: 0.75em;
+                    line-height: 1.25em;
+                }
+                @media only screen and (min-width: 375px) {
+                    font-size: 0.75em;
+                    line-height: 1.5em;
+                }
+            }
+        .icon {
+            font-size: 2.5rem; 
+                @media only screen and (max-width: 375px) {
+                    font-size: 1.5em;
+                }
+
+        }
+       
+        .contact-item:hover {   
+            .icon {
+                color: $tertiary-color;
+                transition: all .10s ease-in-out;
+            }
+
+             .contact-item___text {
+            display: block;
+            }   
+     }
     }
+
 
