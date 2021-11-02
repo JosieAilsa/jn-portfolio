@@ -75,10 +75,10 @@ body {
   color: #1E1E24 !important;
 }
 .nav .nav-item:hover {
-  color: #ED6340 !important;
+  color: #197BBD !important;
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
-  text-decoration: underline #ED6340;
+  text-decoration: underline #197BBD;
 }
 
 .navbar-collapse {
@@ -142,6 +142,7 @@ body {
 .button:hover {
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
+  background-color: #197BBD;
   color: #FAF4ED;
   border: 2px #197BBD;
 }

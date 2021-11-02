@@ -23,10 +23,10 @@
         color:$primary-color !important;
     }
     .nav-item:hover{
-        color: $secondary-color !important;
+        color: $tertiary-color !important;
         transform: scale(1.1);
         transition: all .2s ease-in-out;
-        text-decoration: underline $secondary-color;
+        text-decoration: underline $tertiary-color;
 }}
 
 
@@ -93,6 +93,7 @@
     .button:hover {
         transform: scale(1.1);
         transition: all .2s ease-in-out;
+        background-color: $tertiary-color;
         color: $background-color;
         border: 2px $tertiary-color;
         }
