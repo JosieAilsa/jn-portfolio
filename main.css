@@ -104,7 +104,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.carousel .carousel__button-left {
+.carousel .carousel__button-left, .carousel .carousel__button-right {
   margin-left: 2vw;
   margin-right: 2vw;
   min-height: 22px;
@@ -112,21 +112,10 @@ body {
   max-width: 96px;
   max-height: 66px;
 }
-.carousel .carousel__button-right {
-  margin-left: 2vw;
-  margin-right: 2vw;
-  min-height: 22px;
-  min-width: 31px;
-  max-width: 96px;
-  max-height: 66px;
-}
-.carousel .carousel__button-left:hover {
-  transform: scale(1.4);
+.carousel .carousel__button-left:hover, .carousel .carousel__button-right:hover {
+  transform: scale(1.2);
   transition: all 0.2s ease-in-out;
-}
-.carousel .carousel__button-right:hover {
-  transform: scale(1.4);
-  transition: all 0.2s ease-in-out;
+  fill: #197BBD;
 }
 
 .carousel__description {
@@ -220,15 +209,20 @@ body {
   height: 90vh;
 }
 .skills .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 20vh;
 }
 @media only screen and (max-width: 375px) {
   .skills .skill {
-    height: 11vh;
+    height: 13vh;
   }
 }
 .skills .skills__title {
   display: none;
+  color: #1E1E24;
 }
 @media only screen and (max-width: 375px) {
   .skills .skills__title {
@@ -252,8 +246,11 @@ body {
 }
 
 .skill:hover {
-  transform: scale(1.1);
-  transition: all 0.5s ease-in-out;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+.skill:hover .icon {
+  color: #197BBD;
 }
 .skill:hover .skills__title {
   display: block;
@@ -262,10 +259,59 @@ body {
 #contact {
   height: 90vh;
 }
-#contact .contact__container {
+#contact .shape {
+  height: 80%;
+}
+#contact .contact__bg {
   background-image: url("../imgs/contact-bg.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#contact .contact__container {
+  height: 30%;
+}
+#contact .contact-item {
+  height: 15vh;
+}
+@media only screen and (max-width: 375px) {
+  #contact .contact-item {
+    height: 7.5vh;
+  }
+}
+#contact .contact-item___text {
+  display: none;
+  color: #1E1E24;
+}
+@media only screen and (max-width: 375px) {
+  #contact .contact-item___text {
+    font-size: 0.75em;
+    line-height: 1.25em;
+  }
+}
+@media only screen and (min-width: 375px) {
+  #contact .contact-item___text {
+    font-size: 0.75em;
+    line-height: 1.5em;
+  }
+}
+#contact .icon {
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 375px) {
+  #contact .icon {
+    font-size: 1.5em;
+  }
+}
+#contact .contact-item:hover .icon {
+  color: #197BBD;
+  transition: all 0.1s ease-in-out;
+}
+#contact .contact-item:hover .contact-item___text {
+  display: block;
 }

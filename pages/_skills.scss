@@ -1,13 +1,18 @@
 .skills {
     height: 90vh;
         .skill {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
           height: 20vh;
             @media only screen and (max-width: 375px) {
-                height: 11vh;
+                height: 13vh;
                 }
             }
         .skills__title {
             display: none;
+            color: $primary-color;
                 @media only screen and (max-width: 375px) {
                     font-size: 0.75em;
                     line-height: 1.25em;
@@ -25,8 +30,12 @@
             }
         }
         .skill:hover {
-                transform: scale(1.1);
-                transition: all .5s ease-in-out;
+                transform: scale(1.2);
+                transition: all .30s ease-in-out;
+                
+                .icon{
+                    color: $tertiary-color;
+                }
 
             .skills__title {
                 display: block;
