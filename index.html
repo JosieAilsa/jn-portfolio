@@ -8,45 +8,70 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css" />
     <script src="https://kit.fontawesome.com/8ad8d75bab.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+      async defer
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+      crossorigin="anonymous"></script>
+    <script 
+      async defer
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+      crossorigin="anonymous">
+    </script>
+    <script 
+      async defer
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+      crossorigin="anonymous"></script>
   </head>
   <body>
- <header class = "container-fluid sticky-top">
-        <nav class="row nav d-flex flex-row flex-nowrap navbar justify-content-start sticky-top">
-          <div class="col-xs-2 col-4 logo-container d-flex justify-content-center">
-            <!--Nav bar logo-->
-            <img src="./imgs/jnlogo-01.svg" alt="logo" class="navbar-brand logo"  width="75px" height="43px">
-          </div>
-          <!--Nav bar nav-->
-          <div class = "navbar-nav d-flex flex-row justify-content-around col">
-             <!-- Links -->
-            <div class="col-2 navbar navbar-nav__container">
-                <a href="#projects" class = "nav-item nav-link active text-lg-left text-sm-left d-none d-sm-block">projects</a>
-            </div>
-            <div class="col-2 navbar navbar-nav__container">
-                <a href="#skills" class = "nav-item nav-link active text-lg-left text-sm-right d-none d-sm-block">skills</a>
-            </div>
-            <div class="col-2 navbar navbar-nav__container">
-                <a href="#contact" class = "nav-item nav-link active text-lg-left text-sm-right d-none d-sm-block">contact</a>
-                <!-- Hamburger drop down small devices -->
-                <a><button class="navbar-toggler toggler-example d-sm-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text">
-                <i class="hamburger fas fa-bars fa-1x"></i></span></button></a>
-            </div>
-          </nav>
+  <header class="container-fluid sticky-top">
+    <nav class="row nav d-flex flex-row flex-nowrap navbar justify-content-start sticky-top">
+      <div class="col-xs-2 col-4 logo-container d-flex justify-content-center">
+        <!--Nav bar logo-->
+        <img src="./imgs/jnlogo-01.svg" alt="logo" class="navbar-brand logo"  width="75px" height="43px">
+      </div>
+      <!--Nav bar nav-->
+      <div class = "navbar d-flex flex-row justify-content-around col">
+          <!-- Links -->
+        <div class="col-2 navbar navbar-nav__container">
+            <a href="#projects" class="nav-item nav-link active text-lg-left text-sm-left d-none d-sm-block">projects</a>
+        </div>
+        <div class="col-2 navbar navbar-nav__container">
+            <a href="#skills" class="nav-item nav-link active text-lg-left text-sm-right d-none d-sm-block">skills</a>
+        </div>
+        <div class="col-2 navbar navbar-nav__container">
+            <a href="#contact" class="nav-item nav-link active text-lg-left text-sm-right d-none d-sm-block">contact</a>
+            <!-- Hamburger drop down small devices -->
+            <a>
+                <button class="navbar-toggler toggler-example d-sm-none" 
+                type="button" data-toggle="collapse" 
+                data-target="#navbarSupportedContent1"
+                aria-controls="navbarSupportedContent1" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="dark-blue-text">
+                  <i class="hamburger fas fa-bars fa-1x"></i>
+                </span>
+              </button>
+            </a>
+        </div>
+      </nav>
                   <!-- Collapsible content-->
-                  <div class="collapse navbar-collapse d-sm-none" id="navbarSupportedContent1" >
-                    <!-- Links --> 
-                    <ul class="navbar-nav d-flex flex-column justify-content-around align-items-center">
-                      <li class="nav-item">
-                        <a class="navbar-collapse__item" href="#projects">projects</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="navbar-collapse__item" href="#skills">skills</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="navbar-collapse__item" href="#contact">contact</a>
-                      </li>
-                    </ul>
+                  <div class="collapse navbar-collapse d-sm-none" 
+                       id="navbarSupportedContent1" >
+                        <!-- Links --> 
+                        <ul class="navbar-nav d-flex flex-column justify-content-around align-items-center">
+                          <li class="nav-item">
+                            <a class="navbar-collapse__item" href="#projects">projects</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="navbar-collapse__item" href="#skills">skills</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="navbar-collapse__item" href="#contact">contact</a>
+                          </li>
+                        </ul>
                     <!-- Links -->
                   </div>
                   <!-- Collapsible content -->
@@ -55,65 +80,67 @@
       </header>
   <main class="container-fluid">
 <!---Landing page-->
-      <section class = "landing page col-12">
-        <div id = "hitext">
-          <h1 class="hi__hi title">Hi, I'm Josie.</h1>
-          <h2 class ="hi__intro text-nowrap">
-            I'm a <span id = "hi__location">Bristol</span>-based <span id = "hi__role"> junior developer.</span>
-          </h2>
+      <section class="landing page col-12">
+        <div class="d-flex flex-column justify-content-center align-items-center svg-container">
+          <img class="landing__img" src="./imgs/landing_img3-01.svg" alt="landing_img2" srcset="" height = "100%" width="100%" >
         </div>
-        <a href = "#projects" id = "landing__cta" class = "text-nowrap button" alt = "See my projects"> See my projects </a>
-        <div class = " d-flex flex-column justify-content-center align-items-center svg-container">
-          <img class = "landing__img" src="./imgs/landing_img3-01.svg" alt="landing_img2" srcset="" height = "100%" width="100%" >
-        </div>
+          <div id = "hitext">
+            <h1 class="hi__hi title">Hi, I'm Josie.</h1>
+            <h2 class ="hi__intro text-nowrap">
+              I'm a <span id="hi__location">Bristol</span>-based <span id = "hi__role"> junior developer.</span>
+            </h2>
+          </div>
+          <a href="#projects" id="landing__cta" class="text-nowrap button" alt="See my projects"> See my projects </a>
       </section>
 <!--- Projects section-->
-      <section id = "projects" class = "projects page col-12"> 
+      <section id ="projects" class ="projects page col-12"> 
           <h1 class = "projects__title title dc__title">Projects</h1>
             <div class= "carousel">
               <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" class = "carousel__button-left col-xs-1" viewBox="0 0 69.13 85.52"><defs><style>.cls-1{fill:none;stroke:#ed6340;stroke-miterlimit:10;stroke-width:5px;}</style></defs><g id="Group_4" data-name="Group 4"><path id="Rectangle_1" data-name="Rectangle 2" class="cls-1" d="M4.43,45.9h0a50.49,50.49,0,0,1,61.09-37h0l1.94.48h0a50.49,50.49,0,0,1-61.09,37L4.43,45.9Z" transform="translate(-1.36 -4.94)"/></g><g id="Group_4-2" data-name="Group 4"><path id="Rectangle_1-2" data-name="Rectangle 2" class="cls-1" d="M67.42,86h0A50.5,50.5,0,0,0,6.33,49h0l-1.94.48h0a50.48,50.48,0,0,0,61.09,37L67.42,86Z" transform="translate(-1.36 -4.94)"/></g></svg>
-              <img src = "./imgs/projects-circle_snake-01.svg" alt="my projects" class = "carousel__circle col-8  col-md-6 col-lg-6 col-xl-6">
-              <svg id="Layer_1" data-name="Layer 1"  class = "carousel__button-right col-xs-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.13 85.52"><defs><style>.cls-1{fill:none;stroke:#ed6340;stroke-miterlimit:10;stroke-width:5px;}</style></defs><g id="Group_4" data-name="Group 4"><path id="Rectangle_2" data-name="Rectangle 2" class="cls-1" d="M69.42,45.9h0a50.49,50.49,0,0,0-61.09-37h0l-1.94.48h0a50.49,50.49,0,0,0,61.09,37l1.94-.48Z" transform="translate(-3.36 -4.94)"/></g><g id="Group_4-2" data-name="Group 4"><path id="Rectangle_2-2" data-name="Rectangle 2" class="cls-1" d="M6.43,86h0A50.5,50.5,0,0,1,67.52,49h0l1.94.48h0a50.48,50.48,0,0,1-61.09,37L6.43,86Z" transform="translate(-3.36 -4.94)"/></g></svg>
+              <img src="./imgs/projects-circle_snake-01.svg" alt="my projects" class="carousel__circle col-8  col-md-6 col-lg-6 col-xl-6">
+              <svg id="Layer_1" data-name="Layer 1"  class="carousel__button-right col-xs-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.13 85.52"><defs><style>.cls-1{fill:none;stroke:#ed6340;stroke-miterlimit:10;stroke-width:5px;}</style></defs><g id="Group_4" data-name="Group 4"><path id="Rectangle_2" data-name="Rectangle 2" class="cls-1" d="M69.42,45.9h0a50.49,50.49,0,0,0-61.09-37h0l-1.94.48h0a50.49,50.49,0,0,0,61.09,37l1.94-.48Z" transform="translate(-3.36 -4.94)"/></g><g id="Group_4-2" data-name="Group 4"><path id="Rectangle_2-2" data-name="Rectangle 2" class="cls-1" d="M6.43,86h0A50.5,50.5,0,0,1,67.52,49h0l1.94.48h0a50.48,50.48,0,0,1-61.09,37L6.43,86Z" transform="translate(-3.36 -4.94)"/></g></svg>
             </div>
-            <div class = "carousel__description">
-              <h3 class = "carousel__title subtitle"> Retro Snake </h3>
-              <p class = "carousel__description text-center">Responsive snake game built with HTML, CSS and vanilla JS.</p>
-              <a href = "https://josieailsa.github.io/vanilla-js-snake/" class = "carousel__link button"> See my code here </a>
+            <div class="carousel__description">
+              <h3 class="carousel__title subtitle"> Retro Snake </h3>
+              <p class="carousel__description text-center">Responsive snake game built with HTML, CSS and vanilla JS.</p>
+              <a href="https://josieailsa.github.io/vanilla-js-snake/" 
+                class="carousel__link button"> See my code here </a>
           </div>
       </section>
 <!--Skills section -->
-      <section id = "skills" class = "col-12 page skills">
+      <section id="skills" 
+               class="col-12 page skills">
         <!--Skills title -->
-          <h1 class = "title text-center skills__header d-flex justify-content-around"> Skills </h1>
-          <div class = "row">
-          <div class = "html col-6 col-md-4 col-lg-4 col-xl-4 skill">
+          <h1 class="title text-center skills__header d-flex justify-content-around"> Skills </h1>
+          <div class="row">
+          <div class="html col-6 col-md-4 col-lg-4 col-xl-4 skill">
             <i class="html__img fab fa-html5 icon fa-2x"></i>
-            <p class = "html__title skills__title ">HTML</p>
+            <p class="html__title skills__title ">HTML</p>
           </div>
         <!--CSS-->
-          <div class = "col-6 col-md-4 col-lg-4 col-xl-4  skill">
+          <div class="col-6 col-md-4 col-lg-4 col-xl-4  skill">
             <i class="fab fa-css3-alt icon fa-2x"></i>
             <p class = "skills__title skills__hide ">CSS</p>
           </div>
         <!--JS-->
-         <div class = "col-6 col-md-4 col-lg-4 col-xl-4  skill">
-           <i class="fab fa-js-square icon fa-2x"></i>
-           <p class = "skills__title ">JavaScript</p>
-        </div>
+          <div class = "col-6 col-md-4 col-lg-4 col-xl-4  skill">
+            <i class="fab fa-js-square icon fa-2x"></i>
+            <p class = "skills__title ">JavaScript</p>
+          </div>
         <!--React-->
-        <div class = "col-6 col-md-4 col-lg-4 col-xl-4  skill">
-          <i class="fab fa-react icon fa-2x"></i>
-          <p class = "skills__title ">React</p>
-        </div>
+          <div class = "col-6 col-md-4 col-lg-4 col-xl-4  skill">
+            <i class="fab fa-react icon fa-2x"></i>
+            <p class = "skills__title ">React</p>
+          </div>
         <!--LEAN -->
-        <div class = "col-6 col-md-4 col-lg-4 col-xl-4 skill">
-          <i class="fab fa-angular fa-2x icon"></i>
-            <p class = "skills__title text-center">Angular</p>
-        </div>
+          <div class = "col-6 col-md-4 col-lg-4 col-xl-4 skill">
+            <i class="fab fa-angular fa-2x icon"></i>
+              <p class = "skills__title text-center">Angular</p>
+          </div>
         <!--Java-->
           <div class = "col-6 col-md-4 col-lg-4 col-xl-4  skill">
-          <i class="fab fa-java icon fa-2x""></i>
-          <p class = "skills__title ">Java</p>
+            <i class="fab fa-java icon fa-2x""></i>
+            <p class = "skills__title ">Java</p>
           </div>
         <!--Tools-->
           <div class = "col-6 col-md-4 col-lg-4 col-xl-4  skill">
@@ -121,44 +148,43 @@
             <p class = "skills__title text-center">Digital<br> design</p>
           </div>
         <!--OOP-->
-        <div class = "col-6 col-md-4 col-lg-4 col-xl-4  skill">
-          <i class="far fa-object-ungroup icon fa-2x"></i>
-          <p class = "skills__title text-wrap text-center"> Object-oriented <br> programming</p>
-        </div>
+          <div class = "col-6 col-md-4 col-lg-4 col-xl-4  skill">
+            <i class="far fa-object-ungroup icon fa-2x"></i>
+            <p class = "skills__title text-wrap text-center"> Object-oriented <br> programming</p>
+          </div>
       <!--TDD-->
           <div class = "col-6 col-md-4 col-lg-4 col-xl-4  skill">
             <i class="fas fa-microscope fa-2x icon"></i>
             <p class = "skills__title text-wrap text-center">Test driven <br> development </p>
           </div>
       <!--Comms-->
-        <div class = "col-6 col-md-4 col-lg-4 col-xl-4 skill">
-          <i class="far fa-comments fa-2x icon"></i>
-          <p class = "skills__title text-center">Ex-content <br> writer & designer </p>
-        </div>
+          <div class = "col-6 col-md-4 col-lg-4 col-xl-4 skill">
+            <i class="far fa-comments fa-2x icon"></i>
+            <p class = "skills__title text-center">Ex-content <br> writer & designer </p>
+          </div>
       <!--Stakeholder management -->
-        <div class = "col-6 col-md-4 col-lg-4 col-xl-4 skill">
-        <i class="fas fa-people-arrows fa-2x icon"></i>
-        <p class = "skills__title text-center">Stakeholder <br> managment </p>
-        </div>
+          <div class = "col-6 col-md-4 col-lg-4 col-xl-4 skill">
+            <i class="fas fa-people-arrows fa-2x icon"></i>
+            <p class = "skills__title text-center">Stakeholder <br> managment </p>
+          </div>
       <!--LEAN -->
         <div class = "col-6 col-md-4 col-lg-4 col-xl-4 skill">
           <i class="fas fa-user-cog fa-2x icon"></i>
           <p class = "skills__title text-center">Lean & Agile</p>
         </div>
-
       </div>
     </section>
 <!--Contact section -->
-      <section class ="page" id = "contact">
-        <div class = "row">
-          <h2 class = "col-12 text-center title">Contact</h2>
-        </div>
-        <div class = "col-10 row contact__bg justify-content-center align-items-center">
-            <div class = "col-8 col-xl-3 d-flex flex-wrap justify-content-end align-items-end contact__container">
-                  <div class = "col-6 d-flex flex-column align-items-center justify-content-center contact-item">
-                    <i class="fas fa-search-location icon contact__icon fa-2x"></i>
-                    <p class = "contact-item___text text-center text-wrap ">Bristol, UK. </p>
-                  </div>
+    <section class ="page" id = "contact">
+      <div class = "row">
+        <h2 class = "col-12 text-center title">Contact</h2>
+      </div>
+      <div class = "col-10 row contact__bg justify-content-center align-items-center">
+          <div class = "col-8 col-xl-3 d-flex flex-wrap justify-content-end align-items-end contact__container">
+                <div class = "col-6 d-flex flex-column align-items-center justify-content-center contact-item">
+                  <i class="fas fa-search-location icon contact__icon fa-2x"></i>
+                  <p class = "contact-item___text text-center text-wrap ">Bristol, UK. </p>
+                </div>
                 <div class = "col-6 d-flex flex-column align-items-center justify-content-center contact-item">
                   <i class="far fa-envelope icon contact__icon fa-2x"></i>
                   <a href="mailto:josie.a.newman@gmail.com">
@@ -174,11 +200,8 @@
                     <i class="fab fa-linkedin linkedin icon fa-2x"></i>
                   </a>
                 </div>
-            </div>
-        </section>
+          </div>
+      </section>
     </main>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>

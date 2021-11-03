@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+
+$primary-color:#1E1E24;
+$secondary-color:#ED6340;
+$tertiary-color:#197BBD;
+$background-color:#FAF4ED;
+
+$font-display: "Red Hat Display", sans-serif;
+$font-body: "Montserrat", sans-serif;
+
+.container{
+    background-color: $background-color;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: $font-display;
+}
+
+p{
+    font-family: $font-body;
+    font-size: smaller;
+}
+
+main{
+    background-color: $background-color;
+}
+
+.container-fluid{
+    background-color: $background-color;
+    margin: 0px;
+    padding: 0px ;
+}
+
+body {
+color: $primary-color;
+}
+
+.title {
+    font-size: 3em;
+    color: $secondary-color;
+    text-align: center;
+}
+.subtitle{
+    font-size: 5vmin;
+    color: $secondary-color;
+    text-align: center;
+}
+
